@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpenGarda Digital - Launching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Efek Glow Background -->
+    <div class="bg-glow"></div>
+
+    <div class="container">
+        <!-- Video maskot Garda -->
+        <div class="mascot-wrapper">
+            <video class="robot-video" autoplay muted loop playsinline preload="auto" poster="robot-spengarda.png" aria-label="Video maskot Garda">
+                <source src="Video%20Garda%20Launch.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutaran video.
+            </video>
+            <button id="videoSoundToggle" class="video-sound-btn" type="button" aria-pressed="false">
+                AKTIFKAN SUARA
+            </button>
+        </div>
+
+        <!-- Teks Informasi Utama -->
+        <div class="text-group">
+            <h1 class="glow-title">SpenGarda Digital</h1>
+            <p class="sub-title">Peluncuran Ekosistem Aplikasi & Platform Digital Sekolah</p>
+        </div>
+
+        <!-- Tombol Launching Interaktif -->
+        <button id="btnLaunch" class="launch-btn">MULAI LAUNCHING</button>
+    </div>
+
+    <!-- Workspace SpenGarda Mobile -->
+    <div id="appModal" class="app-modal">
+        <div class="modal-content">
+            <button id="closeModal" class="close-btn">&times;</button>
+            <aside class="app-guide">
+                <div class="guide-badge">EKOSISTEM DIGITAL</div>
+                <img src="robot-spengarda.png" alt="Maskot SpenGarda Mobile" class="guide-robot">
+                <h2>SpenGarda Mobile</h2>
+                <p>Teman digital untuk mengakses layanan sekolah dengan lebih cepat, rapi, dan terhubung.</p>
+                <div class="guide-line"></div>
+                <span class="guide-status"><i></i> Sistem siap digunakan</span>
+            </aside>
+            <section class="app-view">
+                <div class="app-view-header">
+                    <span class="app-view-kicker">SPENGARDA MOBILE</span>
+                    <span class="app-view-status">APLIKASI AKTIF</span>
+                </div>
+                <iframe id="appIframe" src="" title="SpenGarda Mobile" frameborder="0"></iframe>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

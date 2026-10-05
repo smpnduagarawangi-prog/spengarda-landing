@@ -1,0 +1,1224 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260727-05-609cca1"}');</script><script src="/_sdk/728f18890c0241e5.telemetry_sdk.js" integrity="sha512-cMy0xd29wRWs8nyV19fws/+pwQ0u98A3fewCalZ/OWXQXUwzmcx7jKUuZ511uTJlUe1gP0Undii48zuekOylMw=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMPN 2 Garawangi</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+  <script>
+tailwind.config={theme:{extend:{colors:{brand:{50:'#fffbeb',100:'#fef3c7',200:'#fde68a',300:'#fcd34d',400:'#fbbf24',500:'#f59e0b',600:'#d97706',700:'#b45309',800:'#92400e',900:'#78350f'}}}}}
+  </script>
+  <style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;font-family:'Plus Jakarta Sans',sans-serif}
+.card-hover{transition:all .3s}
+.card-hover:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,.12)}
+.fade-in{animation:fadeIn .5s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes marquee{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+.animate-marquee{animation:marquee 30s linear infinite}
+.tab-active{background:#1e3a5f!important;color:#fff!important}
+.tab-inactive{background:#e2e8f0!important;color:#334155!important}
+.menu-active{background:#1e3a5f!important;color:#fff!important}
+.menu-inactive{background:#cbd5e1!important;color:#1e293b!important}
+.schedule-table th,.schedule-table td{border:1px solid #94a3b8;padding:3px 4px;text-align:center;font-size:10px;min-width:60px}
+.schedule-table th{background:#1e3a5f;color:#fff;font-weight:600;font-size:11px}
+.schedule-table tr:nth-child(even) td{background:#f1f5f9}
+.schedule-table .break-row td{background:#fef3c7!important;font-style:italic;font-weight:500;font-size:11px}
+.schedule-table .activity-row td{background:#dbeafe!important;font-weight:500;font-size:11px}
+[data-tooltip]:hover::after{content:attr(data-tooltip);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#1e293b;color:#fff;padding:4px 8px;border-radius:4px;font-size:11px;white-space:nowrap;z-index:50}
+[data-tooltip]{position:relative;cursor:default}
+.info-card{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.08);padding:16px}
+.tab-btn{transition:all .2s}
+.tab-btn.active{background:#3b82f6;color:#fff;box-shadow:0 4px 12px rgba(59,130,246,.3)}
+#independenceBannerBtn{position:relative;display:block;width:100%;margin:0 0 16px;border-radius:16px;overflow:hidden;z-index:1;box-shadow:0 10px 24px rgba(15,23,42,.12)}
+#independenceBannerBtn img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;border-radius:16px;background:#fff}
+.portal-guru-card{overflow:hidden!important}
+.portal-guru-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:8px;padding:8px 12px;background:#f8fafc;border-bottom:1px solid #e2e8f0}
+.portal-zoom-button{width:32px;height:30px;border:1px solid #cbd5e1;border-radius:6px;background:#fff;color:#1e3a5f;font-weight:800;line-height:1;cursor:pointer}
+.portal-zoom-button:hover{background:#e0f2fe}
+.portal-zoom-label{min-width:48px;text-align:center;font-size:12px;font-weight:700;color:#475569}
+.portal-frame-viewport{width:100%;overflow-x:auto;overflow-y:hidden;background:#fff;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y}
+.portal-guru-frame{display:block;width:100%;min-width:0;height:850px;min-height:850px;border:0;transform-origin:top left;transform:scale(1);}
+@media (max-width:767px){#independenceBannerBtn{margin:0 0 12px;border-radius:16px;position:relative;z-index:1}#independenceBannerBtn img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;border-radius:16px}} 
+@media (max-width:767px){#sec-portal-guru .portal-guru-container,#sec-kas-guru .portal-guru-container,#sec-agenda-guru .portal-guru-container{padding-left:0;padding-right:0}#sec-portal-guru .portal-guru-card,#sec-kas-guru .portal-guru-card,#sec-agenda-guru .portal-guru-card{border-radius:0;border-left:0;border-right:0}}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-thumb{background:#93c5fd;border-radius:3px}
+  </style>
+  <script src="/_sdk/935a53bc2e11fb8d.data_sdk.js" type="text/javascript" integrity="sha512-qr2oyPnEys1WebcOABaRh6hG77r5PWpqeWW6JTKbRJqly/INsfBi31CVNlTmHqjgeLpkVmmHZJUdxSx/32tOFQ=="></script>
+  <script src="/_sdk/6030e540d4419216.resizing_sdk.js" type="text/javascript" integrity="sha512-b5KWzyoXsbWP4smq4sftIi6Kts4YVBpBsz0BwCViwbBJkK64a3/Z6ZMdWA+qnplNcXw4mhZeqvQi3mOosiRJdA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="h-full bg-white flex flex-col w-full"><!-- Top Bar -->
+  <div class="w-full bg-blue-900 text-white text-sm py-1.5 px-4 flex justify-between items-center">
+   <div class="flex items-center gap-4"><button onclick="showSection('callcenter')" class="flex items-center gap-1 hover:bg-blue-700 px-2 py-1 rounded transition"><i data-lucide="phone" style="width:13px;height:13px"></i> Call Center</button>
+   </div>
+   <div class="flex items-center gap-3"><button id="refreshButton" type="button" class="bg-blue-700 hover:bg-blue-600 px-3 py-1 rounded-lg text-xs font-semibold transition flex items-center gap-1" title="Refresh"><i data-lucide="rotate-cw" style="width:12px;height:12px"></i><span class="hidden sm:inline">Refresh</span></button>
+   </div>
+  </div>
+  <main id="app" class="w-full flex-1 overflow-auto"><!-- BERANDA -->
+   <section id="sec-beranda" class="fade-in">
+    <div class="w-full bg-gradient-to-br from-blue-700 via-blue-600 to-blue-500 text-white py-4 px-4 shadow-lg">
+     <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-4">
+       <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-1">SMPN 2 GARAWANGI</h1>
+       <p class="text-xs md:text-sm text-blue-200">Bersinergi untuk Pendidikan Berkualitas &amp; Religius</p>
+      </div>
+      <div class="bg-white/15 backdrop-blur-sm border border-white/20 rounded-lg p-3 md:p-4 overflow-hidden">
+       <div class="flex items-center gap-2 mb-2">
+        <i data-lucide="alert-circle" style="width:16px;height:16px;color:#fef3c7;flex-shrink:0"></i>
+        <p class="text-xs md:text-sm font-bold text-blue-50">📢 INFORMASI PENTING</p>
+       </div>
+      <div id="importantInfo" class="rounded-lg border border-white/10 bg-white/10 px-3 py-2.5 text-xs leading-relaxed text-yellow-100 break-words" aria-live="polite">
+       <p class="italic">Memuat informasi penting...</p>
+      </div>
+      </div>
+     </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 py-6">
+     <nav class="w-full bg-white mb-2">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3"><button onclick="showSection('guru')" class="card-hover bg-white rounded-xl p-3 text-center shadow-sm border border-blue-100 transition">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+         <i data-lucide="users" style="width:20px;height:20px;color:#2563eb"></i>
+        </div><p class="text-xs md:text-sm font-bold text-blue-700">Guru</p></button> <button onclick="showSection('jadwal')" class="card-hover bg-white rounded-xl p-4 text-center shadow-sm border border-blue-100 transition">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+         <i data-lucide="calendar" style="width:20px;height:20px;color:#2563eb"></i>
+        </div><p class="text-xs md:text-sm font-bold text-blue-700">Jadwal</p></button> <button onclick="showSection('kehadiran')" class="card-hover bg-white rounded-xl p-4 text-center shadow-sm border border-blue-100 transition">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+         <i data-lucide="clipboard-list" style="width:20px;height:20px;color:#2563eb"></i>
+        </div><p class="text-xs md:text-sm font-bold text-blue-700">Kehadiran</p></button> <button onclick="showSection('tatatertib')" class="card-hover bg-white rounded-xl p-4 text-center shadow-sm border border-blue-100 transition">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+         <i data-lucide="shield-alert" style="width:20px;height:20px;color:#2563eb"></i>
+        </div><p class="text-xs md:text-sm font-bold text-blue-700">Tata Tertib</p></button>
+      </div>
+     </nav>
+     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
+      <div class="card-hover bg-white rounded-xl p-4 text-center shadow-sm border border-blue-100">
+       <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+        <i data-lucide="users" style="width:24px;height:24px;color:#2563eb"></i>
+       </div>
+       <p class="text-2xl font-extrabold text-blue-700" id="siswaAktifCount">557</p>
+       <p class="text-xs text-gray-500 mt-1">Siswa Aktif</p>
+      </div>
+      <div class="card-hover bg-white rounded-xl p-5 text-center shadow-sm border border-blue-100">
+       <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+        <i data-lucide="briefcase" style="width:24px;height:24px;color:#2563eb"></i>
+       </div>
+       <p class="text-2xl font-extrabold text-blue-700" id="guruStaffCount">41</p>
+       <p class="text-xs text-gray-500 mt-1">Guru &amp; Staff</p>
+      </div>
+      <div class="card-hover bg-white rounded-xl p-5 text-center shadow-sm border border-blue-100">
+       <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+        <i data-lucide="award" style="width:24px;height:24px;color:#2563eb"></i>
+       </div>
+       <p class="text-2xl font-extrabold text-blue-700">A</p>
+       <p class="text-xs text-gray-500 mt-1">Akreditasi</p>
+      </div><button onclick="showCurriculumModal()" class="card-hover bg-white rounded-xl p-5 text-center shadow-sm border border-blue-100 w-full cursor-pointer hover:border-blue-300 transition">
+       <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+        <i data-lucide="book-open" style="width:24px;height:24px;color:#2563eb"></i>
+      </div><p class="text-sm md:text-base font-extrabold text-blue-700">Kurikulum Merdeka</p><p class="text-xs text-gray-500 mt-1">Buka informasi</p></button>
+     </div><!-- Visi Banner -->
+     <div class="w-full bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 rounded-2xl p-4 md:p-6 text-white mb-8 text-center shadow-lg relative overflow-hidden flex flex-col justify-center items-center">
+      <div class="absolute inset-0 bg-white/5 backdrop-blur-[1px]"></div>
+      <div class="relative z-10 w-full max-w-xl bg-white/10 border border-white/20 rounded-full py-2 px-6 shadow-inner"><span class="text-xs md:text-sm font-extrabold tracking-wider uppercase text-blue-50">VISI SEKOLAH</span>
+      </div>
+      <p class="relative z-10 text-sm font-bold italic mt-3 max-w-2xl text-blue-100">"Terwujudnya sekolah berbudaya lingkungan yang bersih, berprestasi, dan religius. BERSINERGI"</p>
+     </div><!-- KEMERDEKAAN BANNER -->
+    <div id="independenceBannerBtn" class="w-full border-2 border-red-200">
+      <img src="https://github.com/smpnduagarawangi-prog/imgaset/blob/main/banner%20HUT%20Kuningan.jpeg?raw=true" alt="Banner HUT Kuningan" style="display:block;width:100%;height:auto;object-fit:contain;">
+    </div><!-- Jadwal Sholat -->
+     <h3 class="text-lg font-bold text-blue-800 mb-3">🕐 Jadwal Sholat Hari Ini</h3>
+     <div class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 rounded-2xl p-6 text-white mb-8 shadow-lg overflow-hidden relative">
+      <div class="relative z-10">
+       <div class="flex justify-between items-center mb-4 pb-4 border-b border-white/20">
+        <div>
+         <p class="text-xs text-blue-200 uppercase tracking-wider">Kuningan, Jawa Barat</p>
+         <p class="text-sm font-semibold text-blue-50" id="todayDate"></p>
+        </div>
+        <div class="text-right">
+         <p class="text-xs text-blue-200 uppercase tracking-wider">Waktu Sekarang</p>
+         <p class="text-2xl font-extrabold text-yellow-300" id="currentTime">--:--</p>
+        </div>
+       </div>
+       <div class="grid grid-cols-5 gap-2">
+        <div id="prayer-card-subuh" class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 text-center hover:bg-white/15 transition">
+         <p class="text-xs text-blue-200 uppercase tracking-wider mb-2">Subuh</p>
+         <p class="text-xl font-extrabold text-yellow-300" id="prayer-subuh">--:--</p>
+        </div>
+        <div id="prayer-card-dzuhur" class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 text-center hover:bg-white/15 transition">
+         <p class="text-xs text-blue-200 uppercase tracking-wider mb-2">Dzuhur</p>
+         <p class="text-xl font-extrabold text-yellow-300" id="prayer-dzuhur">--:--</p>
+        </div>
+        <div id="prayer-card-ashar" class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 text-center hover:bg-white/15 transition">
+         <p class="text-xs text-blue-200 uppercase tracking-wider mb-2">Ashar</p>
+         <p class="text-xl font-extrabold text-yellow-300" id="prayer-ashar">--:--</p>
+        </div>
+        <div id="prayer-card-maghrib" class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 text-center hover:bg-white/15 transition">
+         <p class="text-xs text-blue-200 uppercase tracking-wider mb-2">Maghrib</p>
+         <p class="text-xl font-extrabold text-yellow-300" id="prayer-maghrib">--:--</p>
+        </div>
+        <div id="prayer-card-isya" class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 text-center hover:bg-white/15 transition">
+         <p class="text-xs text-blue-200 uppercase tracking-wider mb-2">Isya</p>
+         <p class="text-xl font-extrabold text-yellow-300" id="prayer-isya">--:--</p>
+        </div>
+       </div>
+      <div class="mt-4 flex flex-col items-center gap-2">
+       <p class="text-xs text-blue-300 text-center italic">Update otomatis setiap menit</p>
+       <button id="prayerNotificationButton" type="button" onclick="enablePrayerNotifications()" class="inline-flex items-center gap-2 rounded-lg bg-yellow-300 px-3 py-2 text-xs font-bold text-blue-900 transition hover:bg-yellow-200">
+        <i data-lucide="bell" style="width:14px;height:14px"></i><span>Aktifkan Notifikasi 5 Menit Sebelum</span>
+       </button>
+      </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- GURU -->
+  <section id="sec-guru" class="hidden fade-in">
+   <div class="max-w-6xl mx-auto px-4 py-10">
+     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 border-b border-gray-100 pb-4">
+      <h2 class="text-2xl font-extrabold text-blue-800 flex items-center gap-2"><i data-lucide="users" style="width:28px;height:28px;color:#2563eb"></i> Guru &amp; Staff</h2>
+      <div class="flex flex-wrap items-center gap-2"><button onclick="showSection('portal-guru')" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md"><i data-lucide="layout-dashboard" style="width:16px;height:16px"></i> Absensi Siswa</button> <button onclick="showSection('kas-guru')" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md"><i data-lucide="wallet-cards" style="width:16px;height:16px"></i> KAS Kelas</button> <button onclick="showSection('agenda-guru')" class="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md"><i data-lucide="clipboard-check" style="width:16px;height:16px"></i> Agenda Mengajar</button> <button onclick="showSection('beranda')" class="inline-flex items-center gap-2 bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md"><i data-lucide="home" style="width:16px;height:16px"></i> Home</button>
+      </div>
+     </div>
+     <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 text-white mb-6 flex items-center gap-4">
+      <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+       <i data-lucide="user" style="width:32px;height:32px;color:#2563eb"></i>
+      </div>
+      <div>
+       <p class="text-xs text-blue-200 uppercase tracking-wider">Kepala Sekolah</p>
+       <h3 class="text-xl font-bold">Dewi Pramukawati, M.Pd.</h3>
+      </div>
+     </div>
+     <h3 class="text-lg font-bold text-blue-800 mb-3">Dewan Guru</h3>
+     <div class="bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden mb-6">
+      <div class="overflow-x-auto">
+       <table class="w-full text-sm">
+        <thead>
+         <tr class="bg-gray-100">
+          <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">No</th>
+          <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Nama Guru</th>
+          <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Mata Pelajaran</th>
+         </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-50" id="guruTable"></tbody>
+       </table>
+      </div>
+     </div>
+     <h3 class="text-lg font-bold text-blue-800 mb-3">Tenaga Kependidikan</h3>
+     <div class="bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
+      <div class="overflow-x-auto">
+       <table class="w-full text-sm">
+        <thead>
+         <tr class="bg-gray-100">
+          <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">No</th>
+          <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Nama</th>
+         </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-50" id="staffTable"></tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+  </section><!-- PORTAL GURU -->
+  <section id="sec-portal-guru" class="hidden fade-in">
+   <div class="portal-guru-container max-w-6xl mx-auto px-4 py-10">
+    <div class="bg-gradient-to-r from-amber-600 via-orange-500 to-blue-600 rounded-2xl p-6 text-white mb-6 shadow-lg">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+     <div>
+      <p class="text-xs font-bold uppercase tracking-[0.2em] text-amber-100">Ruang Kerja Pendidik</p>
+      <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight mt-1">Absensi Siswa</h2>
+      <p class="text-sm text-white/85 mt-2">Absensi dan Rekap Absen Siswa</p>
+     </div>
+     <button onclick="showSection('guru')" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-amber-50 text-blue-800 font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md whitespace-nowrap"><i data-lucide="arrow-left" style="width:16px;height:16px"></i> Menu Guru</button>
+    </div>
+    </div>
+    <div class="portal-guru-card bg-white rounded-2xl border border-amber-100 shadow-sm overflow-hidden">
+    <div class="portal-guru-toolbar"><button class="portal-zoom-button" type="button" onclick="changePortalZoom('attendance',-0.1)" aria-label="Perkecil portal absensi">−</button><span id="attendanceZoomLabel" class="portal-zoom-label">100%</span><button class="portal-zoom-button" type="button" onclick="changePortalZoom('attendance',0.1)" aria-label="Perbesar portal absensi">+</button></div>
+    <div id="attendanceFrameViewport" class="portal-frame-viewport"><iframe id="attendancePortalFrame" src="https://yusupfebriana.github.io/absensi/" title="Absensi dan Rekap Absen Siswa" class="portal-guru-frame"></iframe></div>
+    </div>
+   </div>
+  </section><!-- KAS SISWA -->
+  <section id="sec-kas-guru" class="hidden fade-in">
+   <div class="portal-guru-container max-w-6xl mx-auto px-4 py-10">
+    <div class="bg-gradient-to-r from-emerald-700 via-teal-600 to-blue-600 rounded-2xl p-6 text-white mb-6 shadow-lg">
+     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+       <p class="text-xs font-bold uppercase tracking-[0.2em] text-emerald-100">Ruang Administrasi Guru</p>
+      <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight mt-1">KAS Kelas</h2>
+      </div>
+      <button onclick="showSection('guru')" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-emerald-50 text-emerald-800 font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md whitespace-nowrap"><i data-lucide="arrow-left" style="width:16px;height:16px"></i> Menu Guru</button>
+     </div>
+    </div>
+    <div class="portal-guru-card bg-white rounded-2xl border border-emerald-100 shadow-sm overflow-hidden">
+     <div class="portal-guru-toolbar"><button class="portal-zoom-button" type="button" onclick="changePortalZoom('kas',-0.1)" aria-label="Perkecil portal KAS">−</button><span id="kasZoomLabel" class="portal-zoom-label">100%</span><button class="portal-zoom-button" type="button" onclick="changePortalZoom('kas',0.1)" aria-label="Perbesar portal KAS">+</button></div>
+     <div id="kasFrameViewport" class="portal-frame-viewport"><iframe id="kasPortalFrame" src="https://smpnduagarawangi-prog.github.io/tabungan-siswa/" title="Portal Kas dan Tabungan Siswa" class="portal-guru-frame"></iframe></div>
+    </div>
+   </div>
+  </section><!-- AGENDA MENGAJAR GURU -->
+  <section id="sec-agenda-guru" class="hidden fade-in">
+   <div class="portal-guru-container max-w-6xl mx-auto px-4 py-10">
+    <div class="bg-gradient-to-r from-blue-800 via-blue-700 to-cyan-600 rounded-2xl p-6 text-white mb-6 shadow-lg">
+     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+       <p class="text-xs font-bold uppercase tracking-[0.2em] text-blue-100">Ruang Administrasi Guru</p>
+      <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight mt-1">Agenda Mengajar</h2>
+      </div>
+      <button onclick="showSection('guru')" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-blue-50 text-blue-800 font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md whitespace-nowrap"><i data-lucide="arrow-left" style="width:16px;height:16px"></i> Menu Guru</button>
+     </div>
+    </div>
+    <div class="portal-guru-card bg-white rounded-2xl border border-blue-100 shadow-sm overflow-hidden">
+    <div class="portal-guru-toolbar"><button class="portal-zoom-button" type="button" onclick="changePortalZoom('agenda',-0.1)" aria-label="Perkecil agenda mengajar">−</button><span id="agendaZoomLabel" class="portal-zoom-label">100%</span><button class="portal-zoom-button" type="button" onclick="changePortalZoom('agenda',0.1)" aria-label="Perbesar agenda mengajar">+</button></div>
+    <div id="agendaFrameViewport" class="portal-frame-viewport"><iframe id="agendaPortalFrame" src="https://smpnduagarawangi-prog.github.io/agendamengajar/" title="Agenda Mengajar Guru" class="portal-guru-frame"></iframe></div>
+    </div>
+   </div>
+  </section><!-- JADWAL KBM -->
+   <section id="sec-jadwal" class="hidden fade-in">
+    <div class="max-w-6xl mx-auto px-4 py-10">
+     <div class="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 rounded-2xl p-6 text-white mb-6 text-center shadow-lg flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div class="flex-1">
+       <h2 class="text-2xl font-extrabold tracking-tight">📅 JADWAL KEGIATAN BELAJAR MENGAJAR (KBM)</h2>
+       <p class="text-blue-100 text-sm mt-1">Sistem Informasi Kurikulum Merdeka SMPN 2 Garawangi</p>
+      </div><button onclick="showSection('beranda')" class="inline-flex items-center gap-2 bg-white hover:bg-blue-50 text-blue-700 font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md whitespace-nowrap"><i data-lucide="home" style="width:16px;height:16px"></i> Home</button>
+     </div>
+     <nav class="flex gap-2 mb-5"><button id="menu-home" class="menu-active px-5 py-2 rounded-lg font-semibold text-sm transition-all" onclick="switchMenu('home')"><i data-lucide="calendar" style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:4px"></i>Jadwal Utama</button> <button id="menu-infografis" class="menu-inactive px-5 py-2 rounded-lg font-semibold text-sm transition-all" onclick="switchMenu('infografis')"><i data-lucide="user" style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:4px"></i>Jadwal Per Guru</button>
+     </nav>
+     <section id="section-home" class="fade-in">
+      <nav class="flex flex-wrap gap-2 mb-4" role="tablist"><button class="tab-active px-4 py-2 rounded-lg font-medium text-sm transition" onclick="showDay(0)" id="tab-0">Senin</button> <button class="tab-inactive px-4 py-2 rounded-lg font-medium text-sm transition" onclick="showDay(1)" id="tab-1">Selasa</button> <button class="tab-inactive px-4 py-2 rounded-lg font-medium text-sm transition" onclick="showDay(2)" id="tab-2">Rabu</button> <button class="tab-inactive px-4 py-2 rounded-lg font-medium text-sm transition" onclick="showDay(3)" id="tab-3">Kamis</button> <button class="tab-inactive px-4 py-2 rounded-lg font-medium text-sm transition" onclick="showDay(4)" id="tab-4">Jumat</button>
+      </nav>
+      <div class="overflow-x-auto rounded-xl shadow-sm border border-slate-200">
+       <table class="schedule-table w-full border-collapse bg-white" id="schedule-table"></table>
+      </div>
+      <footer class="mt-10 flex flex-col sm:flex-row justify-between gap-8 text-sm text-center border-t border-gray-100 pt-8">
+       <div class="flex-1">
+        <p data-template-id="footer-location" class="canva-text text-gray-500"></p>
+        <p data-template-id="footer-role-ks" class="canva-text font-semibold text-blue-900 mt-1"></p>
+        <p class="mt-12 font-bold text-gray-900">DEWI PRAMUKAWATI, M.Pd.</p>
+        <p class="text-xs text-gray-500">NIP. 19790610 200701 2 008</p>
+       </div>
+       <div class="flex-1">
+        <p class="text-gray-500">&nbsp;</p>
+        <p data-template-id="footer-role-waka" class="canva-text font-semibold text-blue-900 mt-1"></p>
+        <p class="mt-12 font-bold text-gray-900">SARHANI, S.Pd.</p>
+        <p class="text-xs text-gray-500">NIP. 19830502 202221 1 012</p>
+       </div>
+      </footer>
+     </section>
+     <section id="section-infografis" class="hidden fade-in">
+      <h2 data-template-id="infografis-title" class="canva-text text-xl font-bold mb-4"></h2>
+      <div class="bg-white p-5 rounded-2xl border border-blue-100 shadow-sm mb-6">
+       <div class="flex flex-col sm:flex-row sm:items-center gap-3"><label for="info-teacher-select" class="font-semibold text-sm">Pilih Guru:</label> <select id="info-teacher-select" class="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm focus:ring-2 focus:ring-blue-400 outline-none max-w-md" onchange="renderInfoGuru(this.value)"><option value="">-- Pilih Guru --</option></select>
+       </div>
+      </div>
+      <div id="info-result" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+     </section>
+    </div>
+   </section><!-- KEHADIRAN -->
+   <section id="sec-kehadiran" class="hidden fade-in">
+    <div class="max-w-6xl mx-auto px-4 py-10">
+     <div class="bg-gradient-to-r from-blue-600 to-blue-500 rounded-2xl p-6 text-white mb-6 text-center shadow-lg flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div class="flex-1">
+       <h2 class="text-2xl font-extrabold tracking-tight">CEK KEHADIRAN HARIAN SISWA</h2>
+       <p class="text-blue-200 text-sm mt-1">Data dari Google Spreadsheet</p>
+      </div><button onclick="showSection('beranda')" class="inline-flex items-center gap-2 bg-white hover:bg-blue-50 text-blue-700 font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md whitespace-nowrap"><i data-lucide="home" style="width:16px;height:16px"></i> Home</button>
+     </div>
+    <div class="flex gap-2 mb-6 flex-wrap"><button onclick="showKehadiranTab('data')" class="tab-btn active px-5 py-2 rounded-xl text-sm font-semibold bg-gray-200 text-gray-700" id="tab-kdata">Data Kehadiran</button> <button onclick="showKehadiranTab('infografis')" class="tab-btn px-5 py-2 rounded-xl text-sm font-semibold bg-gray-200 text-gray-700" id="tab-kinfo">Infografis</button>
+     </div>
+     <div id="kh-data">
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-blue-100 mb-4">
+       <div class="flex flex-wrap gap-3 items-end">
+        <div class="flex-1 min-w-[150px]">
+         <label for="filterKelas" class="text-xs font-semibold text-gray-600 block mb-1">Kelas</label><select id="filterKelas" onchange="applyFilters()" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-400 outline-none"><option value="">Semua Kelas</option></select>
+        </div>
+        <div class="flex-1 min-w-[150px]">
+         <label for="quickSearch" class="text-xs font-semibold text-gray-600 block mb-1">Pencarian</label><input id="quickSearch" oninput="applyFilters()" type="text" placeholder="Cari nama/NIS..." class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-400 outline-none">
+        </div><button onclick="resetFilters()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-lg text-sm font-semibold transition"><i data-lucide="rotate-ccw" style="width:14px;height:14px"></i> Reset</button>
+       </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
+       <div class="flex items-center justify-between px-4 py-3 bg-gray-50 border-b border-gray-100">
+        <div class="flex items-center gap-2 text-sm text-gray-600">
+         Tampilkan: <select id="pageSize" onchange="currentPage=1;renderKehadiranTable()" class="border border-gray-300 rounded-lg px-2 py-1 text-sm"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="all">Semua</option></select>
+        </div>
+        <p id="dataInfo" class="text-xs text-gray-500"></p>
+       </div>
+       <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+         <thead>
+          <tr class="bg-gray-200">
+           <th class="px-4 py-3 text-left text-xs font-semibold text-gray-700">Kelas</th>
+           <th class="px-4 py-3 text-left text-xs font-semibold text-gray-700">Nama</th>
+           <th class="px-4 py-3 text-left text-xs font-semibold text-gray-700">NIS</th>
+           <th class="px-4 py-3 text-left text-xs font-semibold text-gray-700">Tanggal</th>
+           <th class="px-4 py-3 text-left text-xs font-semibold text-gray-700">Jam</th>
+          </tr>
+         </thead>
+         <tbody id="kehadiranBody" class="divide-y divide-gray-50"></tbody>
+        </table>
+       </div>
+       <div id="pagination" class="flex items-center justify-center gap-1 px-4 py-3 border-t border-gray-100"></div>
+      </div>
+      <div id="loadingIndicator" class="text-center py-10 text-blue-600">
+       <div class="inline-flex items-center gap-2">
+        <svg class="animate-spin w-5 h-5" viewbox="0 0 24 24" fill="none">
+         <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" class="opacity-25" /><path d="M4 12a8 8 0 018-8" stroke="currentColor" stroke-width="3" stroke-linecap="round" class="opacity-75" />
+        </svg> Memuat data...
+       </div>
+      </div>
+     </div>
+     <div id="kh-infografis" class="hidden">
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-blue-100 mb-4">
+       <label for="infoFilterKelas" class="text-xs font-semibold text-gray-600 block mb-1">Filter Kelas</label><select id="infoFilterKelas" onchange="renderInfografis()" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm max-w-xs"><option value="">Semua Kelas</option></select>
+      </div>
+      <div id="infografisChart" class="bg-white rounded-2xl p-6 shadow-sm border border-blue-100"></div>
+     </div>
+    </div>
+   </section><!-- TATA TERTIB -->
+   <section id="sec-tatatertib" class="hidden fade-in">
+    <div class="max-w-6xl mx-auto px-4 py-10">
+     <div class="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 rounded-2xl p-6 text-white mb-6 text-center shadow-lg flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div class="flex-1">
+       <h2 class="text-2xl font-extrabold tracking-tight">⚖️ TATA TERTIB &amp; POIN PELANGGARAN</h2>
+       <p class="text-blue-100 text-sm mt-1">Sistem Pemantauan Kedisiplinan Siswa SMPN 2 Garawangi</p>
+      </div><button onclick="showSection('beranda')" class="inline-flex items-center gap-2 bg-white hover:bg-blue-50 text-blue-700 font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md whitespace-nowrap"><i data-lucide="home" style="width:16px;height:16px"></i> Home</button>
+     </div>
+     <div class="flex gap-2 mb-6 flex-wrap"><button onclick="switchTataTertibTab('tabel')" class="tab-btn active px-5 py-2.5 rounded-xl text-sm font-semibold bg-blue-600 text-white shadow" id="tab-tt-tabel">Bobot Poin Pelanggaran</button> <button onclick="switchTataTertibTab('cek')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-gray-200 text-gray-700" id="tab-tt-cek">🔍 Cek Data Pelanggar</button>
+     </div><!-- TAB TABEL -->
+     <div id="tt-tabel-section" class="space-y-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+       <h3 class="text-lg font-bold text-blue-900 mb-4 flex items-center gap-2"><i data-lucide="info" class="text-blue-600"></i> Ketentuan Bobot Poin Pelanggaran</h3>
+       <div class="space-y-6">
+        <div>
+         <h4 class="font-bold text-blue-800 text-sm border-b pb-2 mb-2 uppercase tracking-wider">A. KEHADIRAN</h4>
+         <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+           <thead>
+            <tr class="bg-gray-50 border-b">
+             <th class="px-4 py-2 text-left text-xs font-semibold text-gray-600">No</th>
+             <th class="px-4 py-2 text-left text-xs font-semibold text-gray-600">Jenis Pelanggaran</th>
+             <th class="px-4 py-2 text-center text-xs font-semibold text-gray-600 w-24">Bobot</th>
+            </tr>
+           </thead>
+           <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">1</td>
+             <td class="px-4 py-2.5 font-medium">Terlambat</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">2</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">2</td>
+             <td class="px-4 py-2.5 font-medium">Tidak bawa kartu absen</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">1</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">3</td>
+             <td class="px-4 py-2.5 font-medium">Kartu absen hilang</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">2</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">4</td>
+             <td class="px-4 py-2.5 font-medium">Minggat</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full">10</span></td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+        <div>
+         <h4 class="font-bold text-blue-800 text-sm border-b pb-2 mb-2 uppercase tracking-wider">B. DISIPLIN PAKAIAN</h4>
+         <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+           <thead>
+            <tr class="bg-gray-50 border-b">
+             <th class="px-4 py-2 text-left text-xs font-semibold text-gray-600">No</th>
+             <th class="px-4 py-2 text-left text-xs font-semibold text-gray-600">Jenis Pelanggaran</th>
+             <th class="px-4 py-2 text-center text-xs font-semibold text-gray-600 w-24">Bobot</th>
+            </tr>
+           </thead>
+           <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">1</td>
+             <td class="px-4 py-2.5 font-medium">Tidak sesuai aturan</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">2</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">2</td>
+             <td class="px-4 py-2.5 font-medium">Tidak lengkap</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">1</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">3</td>
+             <td class="px-4 py-2.5 font-medium">Menggunakan aksesoris</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">2</span></td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+        <div>
+         <h4 class="font-bold text-blue-800 text-sm border-b pb-2 mb-2 uppercase tracking-wider">C. KEPRIBADIAN / SIKAP</h4>
+         <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+           <thead>
+            <tr class="bg-gray-50 border-b">
+             <th class="px-4 py-2 text-left text-xs font-semibold text-gray-600">No</th>
+             <th class="px-4 py-2 text-left text-xs font-semibold text-gray-600">Jenis Pelanggaran</th>
+             <th class="px-4 py-2 text-center text-xs font-semibold text-gray-600 w-24">Bobot</th>
+            </tr>
+           </thead>
+           <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">1</td>
+             <td class="px-4 py-2.5 font-medium">Siswi memakai dan membawa make up ke sekolah</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full">10</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">2</td>
+             <td class="px-4 py-2.5 font-medium">Merokok di lingkungan sekolah</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full">25</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">3</td>
+             <td class="px-4 py-2.5 font-medium">Minum minuman keras</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full">50</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">4</td>
+             <td class="px-4 py-2.5 font-medium">Corat-coret fasilitas sekolah</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">5</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">5</td>
+             <td class="px-4 py-2.5 font-medium">Membuang sampah sembarangan</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">5</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">6</td>
+             <td class="px-4 py-2.5 font-medium">Tawuran/terlibat perkelahian</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full">50</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">7</td>
+             <td class="px-4 py-2.5 font-medium">Penyalahgunaan HP</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">5</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">8</td>
+             <td class="px-4 py-2.5 font-medium">Bullying</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full">10</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">9</td>
+             <td class="px-4 py-2.5 font-medium">Makan/minum di kelas kecuali MBG</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">2</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">10</td>
+             <td class="px-4 py-2.5 font-medium">Kuku panjang, rambut panjang dan rambut diwarnai</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">5</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">11</td>
+             <td class="px-4 py-2.5 font-medium">Berduaan, bermesraan di lingkungan sekolah</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full">50</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">12</td>
+             <td class="px-4 py-2.5 font-medium">Mencemarkan nama baik sekolah</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full">50</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">13</td>
+             <td class="px-4 py-2.5 font-medium">Melawan kepala sekolah, guru dan karyawan dengan ancaman</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full">75</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+             <td class="px-4 py-2.5 text-gray-500">14</td>
+             <td class="px-4 py-2.5 font-medium">Melawan kepala sekolah, guru dan karyawan dengan pemukulan</td>
+             <td class="px-4 py-2.5 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full">100</span></td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div><!-- TAB CEK -->
+     <div id="tt-cek-section" class="hidden space-y-6">
+      <div class="max-w-xl mx-auto">
+       <div class="bg-white rounded-2xl p-6 shadow-lg border border-blue-100 relative">
+        <h3 class="text-base font-bold text-slate-800 mb-4">Cek Poin &amp; Pelanggaran Siswa</h3>
+        <div class="space-y-4">
+         <div class="relative">
+          <label for="searchPelanggarName" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Nama Siswa</label>
+          <div class="relative">
+           <input id="searchPelanggarName" type="text" placeholder="Ketik nama siswa..." class="w-full border border-gray-300 rounded-xl pl-10 pr-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-400 outline-none" oninput="onPelanggarInput(this.value)">
+           <div class="absolute left-3 top-3.5 text-gray-400">
+            <i data-lucide="search" style="width:16px;height:16px"></i>
+           </div>
+          </div>
+          <div id="autocompleteResults" class="absolute left-0 right-0 mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto hidden z-20"></div>
+         </div>
+         <div class="flex gap-2"><button onclick="searchPelanggar()" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-xl transition text-sm flex items-center justify-center gap-2 shadow-md"><i data-lucide="search" style="width:16px;height:16px"></i> Cari Data</button> <button onclick="resetPelanggarSearch()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold px-4 py-2.5 rounded-xl transition text-sm">Reset</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div id="pelanggarResult" class="max-w-3xl mx-auto hidden"></div>
+      <div id="pelanggarEmpty" class="text-center py-12">
+       <div class="bg-blue-50/50 rounded-2xl p-8 border border-blue-100 max-w-md mx-auto">
+        <i data-lucide="shield-alert" style="width:48px;height:48px;color:#3b82f6" class="mx-auto mb-3"></i>
+        <p class="text-gray-600 text-sm font-medium">Silakan ketik dan pilih nama siswa untuk memantau data pelanggaran dan akumulasi poin.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- CALL CENTER -->
+   <section id="sec-callcenter" class="hidden fade-in">
+    <div class="max-w-6xl mx-auto px-4 py-10">
+     <div class="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 rounded-2xl p-6 text-white mb-6 text-center shadow-lg flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div class="flex-1">
+       <h2 data-template-id="callcenter-title" class="canva-text text-2xl font-extrabold tracking-tight"></h2>
+       <p data-template-id="callcenter-subtitle" class="canva-text text-blue-100 text-sm mt-1"></p>
+      </div><button onclick="showSection('beranda')" class="inline-flex items-center gap-2 bg-white hover:bg-blue-50 text-blue-700 font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md whitespace-nowrap"><i data-lucide="home" style="width:16px;height:16px"></i> Home</button>
+     </div>
+     <div class="bg-white rounded-2xl p-4 shadow-sm border border-blue-100 mb-6 flex flex-col sm:flex-row gap-4 items-center justify-between">
+      <div class="w-full sm:w-auto flex-1 max-w-md">
+       <div class="relative">
+        <input id="searchContact" oninput="filterContacts()" type="text" placeholder="Cari nama atau jabatan..." class="w-full border border-gray-300 rounded-xl pl-10 pr-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-400 outline-none">
+        <div class="absolute left-3 top-3 text-gray-400">
+         <i data-lucide="search" style="width:16px;height:16px"></i>
+        </div>
+       </div>
+      </div>
+      <div class="flex gap-2"><button onclick="filterContactCategory('all')" id="cat-all" class="px-4 py-2 rounded-xl text-xs font-semibold bg-blue-900 text-white transition shadow">Semua</button> <button onclick="filterContactCategory('wali')" id="cat-wali" class="px-4 py-2 rounded-xl text-xs font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition">Wali Kelas</button> <button onclick="filterContactCategory('staff')" id="cat-staff" class="px-4 py-2 rounded-xl text-xs font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition">Staf &amp; Pimpinan</button>
+      </div>
+     </div>
+     <div id="contactsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+   </section>
+   <template id="contact-card-template">
+    <div class="card-hover bg-white rounded-2xl p-5 shadow-sm border border-blue-100 flex flex-col justify-between">
+     <div class="flex items-center gap-4 mb-4">
+      <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm avatar-badge"></div>
+      <div>
+       <h3 class="font-bold text-base text-slate-800 contact-name"></h3>
+       <p class="text-xs text-slate-500 contact-role mt-0.5"></p>
+      </div>
+     </div>
+     <div class="border-t border-slate-100 pt-4 flex justify-end contact-action-wrapper"></div>
+    </div>
+   </template><!-- Curriculum Modal -->
+   <div id="curriculumModal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onclick="closeCurriculumModal(event)">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto" onclick="event.stopPropagation()">
+     <div class="sticky top-0 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 text-white p-6 flex items-center justify-between border-b border-blue-400">
+      <h2 class="text-2xl font-extrabold">Kurikulum Merdeka</h2><button onclick="closeCurriculumModal()" class="text-white hover:bg-blue-600 p-2 rounded-lg transition"><i data-lucide="x" style="width:24px;height:24px"></i></button>
+     </div>
+     <div class="p-6 space-y-6">
+      <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+         <div>
+          <h3 class="font-bold text-blue-900">Materi Pembelajaran</h3>
+          <p class="text-xs text-blue-700 mt-1">Akses materi Informatika untuk pembelajaran Kurikulum Merdeka.</p>
+         </div>
+         <a href="https://notebook.google.com/notebook/b3102ed5-d975-4e31-9fde-fca4cd88fe19" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-xl transition text-sm shadow-md whitespace-nowrap">
+          <i data-lucide="external-link" style="width:16px;height:16px"></i> Materi Informatika
+         </a>
+        </div>
+        <div class="mt-4 rounded-xl border border-blue-200 bg-white p-4 text-sm text-blue-900">
+         Materi Informatika dibuka di tab baru agar proses login Google dapat berjalan dengan normal.
+        </div>
+      </div>
+      <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-6 border border-emerald-200">
+       <div class="flex items-start gap-4 mb-4">
+        <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0">
+         <i data-lucide="book-open" style="width:24px;height:24px;color:white"></i>
+        </div>
+        <div>
+         <h3 class="text-lg font-bold text-emerald-900 mb-1">Kurikulum Terbaru</h3>
+         <p class="text-sm text-emerald-700">Menggunakan Kurikulum Merdeka untuk semua penjenjang 7, 8, dan 9</p>
+        </div>
+       </div>
+      </div>
+      <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200">
+       <div class="flex items-start gap-4 mb-4">
+        <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+         <i data-lucide="sparkles" style="width:24px;height:24px;color:white"></i>
+        </div>
+        <div>
+         <h3 class="text-lg font-bold text-purple-900 mb-1">Berprestasi</h3>
+         <p class="text-sm text-purple-700">Akreditasi A. Pembelajaran berfokus pada pencapaian kompetensi serta prestasi siswa yang terukur.</p>
+        </div>
+       </div>
+      </div>
+      <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 border border-orange-200">
+       <div class="flex items-start gap-4 mb-4">
+        <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+         <i data-lucide="heart" style="width:24px;height:24px;color:white"></i>
+        </div>
+        <div>
+         <h3 class="text-lg font-bold text-orange-900 mb-1">Religius &amp; Nyaman</h3>
+         <p class="text-sm text-orange-700">Pengalaman belajar yang mengutamakan nilai-nilai religius dan menciptakan lingkungan belajar yang nyaman.</p>
+        </div>
+       </div>
+      </div>
+      <div class="border-t pt-6">
+       <h4 class="font-bold text-blue-900 mb-3 flex items-center gap-2"><i data-lucide="check-circle-2" style="width:20px;height:20px;color:#2563eb"></i> Fitur Utama Kurikulum Merdeka</h4>
+       <ul class="space-y-2">
+        <li class="flex items-start gap-3"><span class="text-blue-600 font-bold mt-0.5">•</span><span class="text-sm text-gray-700"><strong>Pembelajaran Berbasis Proyek:</strong> Siswa belajar melalui proyek nyata yang relevan.</span></li>
+        <li class="flex items-start gap-3"><span class="text-blue-600 font-bold mt-0.5">•</span><span class="text-sm text-gray-700"><strong>Dimensi Pancasila:</strong> Mengembangkan karakter dan nilai-nilai Pancasila.</span></li>
+        <li class="flex items-start gap-3"><span class="text-blue-600 font-bold mt-0.5">•</span><span class="text-sm text-gray-700"><strong>Fleksibilitas Pembelajaran:</strong> Guru menyesuaikan pembelajaran dengan kebutuhan siswa.</span></li>
+        <li class="flex items-start gap-3"><span class="text-blue-600 font-bold mt-0.5">•</span><span class="text-sm text-gray-700"><strong>Asesmen Berkelanjutan:</strong> Penilaian komprehensif mencakup kognitif, afektif, dan psikomotor.</span></li>
+       </ul>
+      </div>
+      <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+       <p class="text-xs text-blue-900"><strong>Komitmen SMPN 2 Garawangi:</strong> Kami berkomitmen untuk memberikan pendidikan berkualitas dengan menerapkan Kurikulum Merdeka secara optimal.</p>
+      </div>
+     </div>
+    </div>
+   </div>
+    </div>
+  </main>
+  <script src="/_sdk/0a2c59aba90bafcf.editing_sdk.js" integrity="sha512-oJ0eVi6NgEzXGPCIPXJiGxB6ZRyIzQ1VF+WywtAc5NXBkRu8KT/0qsMQvecuVbkhSpdfToUqXoPwRVBZaa+Xxw=="></script>
+  <script>
+// --- CURRICULUM MODAL ---
+function showCurriculumModal(){document.getElementById('curriculumModal').classList.remove('hidden');document.body.style.overflow='hidden';lucide.createIcons()}
+function closeCurriculumModal(event){if(event&&event.target&&event.target.id!=='curriculumModal')return;document.getElementById('curriculumModal').classList.add('hidden');document.body.style.overflow='auto'}
+// --- DATA ---
+const guruData=[
+["Didi Ahmad Setiadi, S.Pd.","IPA"],["Tien Sulastini, S.Pd.","IPS"],["Endang Sri Hendayani, S.Pd.","IPA"],["Ujang Sudirja, S.Pd.","Bahasa Inggris"],["Saenah, S.Pd.","IPS"],["Syarip Hidayat, S.Pd.","Bahasa Indonesia"],["Ayip Zaenal Aripin, M.Pd.","PAI"],["Dedi Sutardi, S.Pd.","IPA"],["Nani Yuningsih, S.Pd.","Bahasa Sunda"],["Eros Rosmiati, S.Pd.","Bahasa Sunda"],["Iman Nurjaman, S.Pd.","IPS"],["Elis Sussanti, S.Pd.","Matematika"],["Sarhani, S.Pd.","Matematika"],["Adit Adistya Maulana, S.Pd.","PJOK"],["Sanita Triksi Sepia, S.Pd.","Bahasa Inggris"],["Ina Yatul Huda, S.Pd.","Seni Budaya"],["Rudiyanto, S.Pd.","Bahasa Indonesia"],["Yusup Febriana, S.Pd.","IPA"],["Nia Komalasari, S.Pd.I.","Matematika"],["Nia Fitria, S.Pd.","Bahasa Inggris"],["Sri Nurhayati, M.Pd.","IPA"],["Regi Fajar Nugraha, S.Pd.","PJOK"],["Euis Karmila, M.Sn.","Seni Budaya"],["Aang Apandi, S.Pd.","PPKN"],["Ahmad Royani, S.Pd.","PAI"],["Evy Setia Oktaviani, S.Kom.","Informatika"],["Lia Lustiyani, S.Pd.","Bahasa Indonesia"],["Ayu Diene Yura, S.Pd.","PPKN"],["Gama Permana, SE.,Sy.","BK"],["Andri Priatna, S.Pd.","Informatika"]
+];
+const staffData=["Diding Kosdadi","Dede Astri Muryanti","Herianah","Aan, S.Ip","Wina Ningsih","Mutia Febriani","Aris Riyanto","Rhomi Najilman","Ucu Sudiawati","Ilah","Herman","Randi Nugraha","Apang"];
+
+const gt=document.getElementById('guruTable');
+guruData.forEach((g,i)=>{const tr=document.createElement('tr');tr.className='hover:bg-blue-50';tr.innerHTML=`<td class="px-4 py-2.5 text-gray-500">${i+1}</td><td class="px-4 py-2.5 font-medium text-gray-800">${g[0]}</td><td class="px-4 py-2.5"><span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">${g[1]}</span></td>`;gt.appendChild(tr)});
+const st=document.getElementById('staffTable');
+staffData.forEach((s,i)=>{const tr=document.createElement('tr');tr.className='hover:bg-blue-50';tr.innerHTML=`<td class="px-4 py-2.5 text-gray-500">${i+1}</td><td class="px-4 py-2.5 font-medium text-gray-800">${s}</td>`;st.appendChild(tr)});
+
+// --- NAVIGATION ---
+function showSection(id){
+ document.querySelectorAll('[id^="sec-"]').forEach(s=>{s.classList.add('hidden');s.classList.remove('fade-in')});
+ const el=document.getElementById('sec-'+id);el.classList.remove('hidden');void el.offsetWidth;el.classList.add('fade-in');
+ if(id==='kehadiran')ensureSectionLoaded('kehadiran');
+ else if(id==='tatatertib')ensureSectionLoaded('tatatertib');
+ else if(id==='jadwal')ensureSectionLoaded('jadwal');
+}
+
+const portalZoomState={
+ attendance: 1,
+ kas: 1,
+ agenda: 1
+};
+
+function applyPortalZoom(portal){
+ const config={
+  attendance:{frame:'attendancePortalFrame',viewport:'attendanceFrameViewport',label:'attendanceZoomLabel'},
+  kas:{frame:'kasPortalFrame',viewport:'kasFrameViewport',label:'kasZoomLabel'},
+  agenda:{frame:'agendaPortalFrame',viewport:'agendaFrameViewport',label:'agendaZoomLabel'}
+ }[portal];
+ if(!config)return;
+ const frame=document.getElementById(config.frame);
+ const viewport=document.getElementById(config.viewport);
+ const label=document.getElementById(config.label);
+ if(!frame||!viewport)return;
+ const zoom=portalZoomState[portal];
+ frame.style.transform=`scale(${zoom})`;
+ frame.style.marginLeft='0';
+ viewport.style.height=`${850*zoom}px`;
+ viewport.scrollLeft=0;
+ if(label)label.textContent=`${Math.round(zoom*100)}%`;
+}
+
+function changePortalZoom(portal,amount){
+ const current=portalZoomState[portal] || 1;
+ portalZoomState[portal]=Math.min(1.2,Math.max(0.4,Math.round((current+amount)*10)/10));
+ applyPortalZoom(portal);
+}
+
+// --- KEHADIRAN ---
+let allKehadiranData=[],filteredData=[],currentPage=1;
+function updateSiswaAktifCount(){const el=document.getElementById('siswaAktifCount');if(el){const validNIS=new Set(allKehadiranData.map(d=>d.nis).filter(nis=>nis&&nis.trim()&&nis!=='#N/A'&&nis!=='N/A'));el.textContent=validNIS.size||557}}
+function updateGuruStaffCount(){const el=document.getElementById('guruStaffCount');if(el)el.textContent=guruData.length+staffData.length}
+
+function showKehadiranTab(id){
+ document.getElementById('kh-data').classList.toggle('hidden',id!=='data');
+ document.getElementById('kh-infografis').classList.toggle('hidden',id!=='infografis');
+ document.getElementById('tab-kdata').classList.toggle('active',id==='data');
+ document.getElementById('tab-kinfo').classList.toggle('active',id==='infografis');
+ if(id==='infografis')renderInfografis();
+}
+
+async function fetchKehadiran(){
+ try{
+  const res=await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vT4DpsIZaKQdnVpeiziCiP-7Yh9Ydc0tFFMA-qwMhKnGGi-HM82SpBJ7GzYMHWS3agqO3rsm8153P1c/pub?gid=2099681771&single=true&output=csv&t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(8000)});
+  if(!res.ok)throw new Error("Gagal");
+  const text=await res.text();const lines=text.split(/\r?\n/);
+  if(lines.length<2)throw new Error("Kosong");
+  const headers=parseCSVLine(lines[0]).map(h=>h.replace(/^"|"$/g,'').trim().toLowerCase());
+  let idxKelas=headers.findIndex(h=>h.includes('kelas'));
+  let idxNama=headers.findIndex(h=>h.includes('nama'));
+  let idxNis=headers.findIndex(h=>h.includes('nis'));
+  let idxTanggal=headers.findIndex(h=>h.includes('tanggal')||h.includes('timestamp')||h.includes('waktu'));
+  let idxJam=headers.findIndex(h=>h.includes('jam')||h.includes('pukul')||h.includes('status')||h.includes('hadir'));
+  if(idxKelas===-1)idxKelas=0;if(idxNama===-1)idxNama=1;if(idxNis===-1)idxNis=2;if(idxTanggal===-1)idxTanggal=3;if(idxJam===-1)idxJam=4;
+  allKehadiranData=[];
+  for(let i=1;i<Math.min(lines.length,1001);i++){const line=lines[i].trim();if(!line)continue;const vals=parseCSVLine(line).map(v=>v.replace(/^"|"$/g,'').trim());if(vals.length>0&&vals[idxNama]){allKehadiranData.push({kelas:vals[idxKelas]||'',nama:vals[idxNama]||'',nis:vals[idxNis]||'',tanggal:vals[idxTanggal]||'',jam:vals[idxJam]||''})}}
+ }catch(e){
+  allKehadiranData=[{kelas:"VII-A",nama:"Ahmad Hidayat",nis:"23240701",tanggal:"21/07/2026",jam:"07.15"},{kelas:"VII-B",nama:"Citra Lestari",nis:"23240703",tanggal:"21/07/2026",jam:"07.12"},{kelas:"VIII-A",nama:"Eko Prasetyo",nis:"22230801",tanggal:"21/07/2026",jam:"07.18"},{kelas:"IX-A",nama:"Gita Permata",nis:"21220901",tanggal:"21/07/2026",jam:"07.10"}];
+ }
+ populateFilters();applyFilters();setTimeout(()=>document.getElementById('loadingIndicator')?.classList.add('hidden'),500);updateSiswaAktifCount();
+}
+
+function parseCSVLine(line){const result=[];let current='',inQuotes=false;const delimiter=(line.split(';').length>line.split(',').length)?';':',';for(let i=0;i<line.length;i++){const c=line[i];if(c==='"')inQuotes=!inQuotes;else if(c===delimiter&&!inQuotes){result.push(current);current=''}else current+=c}result.push(current);return result}
+
+function populateFilters(){
+ const kelasSet=new Set(allKehadiranData.map(d=>d.kelas).filter(Boolean));const sorted=[...kelasSet].sort();
+ const f1=document.getElementById('filterKelas');const f2=document.getElementById('infoFilterKelas');
+ f1.innerHTML='<option value="">Semua Kelas</option>';f2.innerHTML='<option value="">Semua Kelas</option>';
+ sorted.forEach(k=>{f1.innerHTML+=`<option value="${k}">${k}</option>`;f2.innerHTML+=`<option value="${k}">${k}</option>`});
+}
+
+function applyFilters(){
+ const kelas=document.getElementById('filterKelas').value;const search=document.getElementById('quickSearch').value.toLowerCase();
+ filteredData=allKehadiranData.filter(d=>{if(kelas&&d.kelas!==kelas)return false;if(search&&!d.nama.toLowerCase().includes(search)&&!d.nis.toLowerCase().includes(search))return false;return true});
+ currentPage=1;renderKehadiranTable();
+}
+
+function resetFilters(){document.getElementById('filterKelas').value='';document.getElementById('quickSearch').value='';filteredData=[...allKehadiranData];currentPage=1;renderKehadiranTable()}
+
+function renderKehadiranTable(){
+ const ps=document.getElementById('pageSize').value;const size=ps==='all'?filteredData.length:parseInt(ps);const total=filteredData.length;const pages=Math.max(1,Math.ceil(total/size));if(currentPage>pages)currentPage=pages;
+ const start=(currentPage-1)*size;const pageData=filteredData.slice(start,start+size);const body=document.getElementById('kehadiranBody');body.innerHTML='';
+ if(!pageData.length){body.innerHTML='<tr><td colspan="5" class="px-4 py-8 text-center text-gray-400">Tidak ada data</td></tr>'}
+ else{pageData.forEach(d=>{const isAbsent=d.jam==='#N/A'||d.jam==='N/A'||!d.jam;const tr=document.createElement('tr');tr.className='hover:bg-blue-50';tr.innerHTML=`<td class="px-4 py-2.5">${d.kelas}</td><td class="px-4 py-2.5 font-medium">${d.nama}</td><td class="px-4 py-2.5">${d.nis}</td><td class="px-4 py-2.5">${d.tanggal}</td><td class="px-4 py-2.5">${isAbsent?'<span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded-full">Tidak Hadir</span>':'<span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">'+d.jam+'</span>'}</td>`;body.appendChild(tr)})}
+ document.getElementById('dataInfo').textContent=`${Math.min(start+1,total)}–${Math.min(start+size,total)} dari ${total}`;
+ const pg=document.getElementById('pagination');pg.innerHTML='';
+ if(pages>1){const mkBtn=(txt,p2,dis,act)=>{const b=document.createElement('button');b.textContent=txt;b.disabled=dis;b.className=`px-3 py-1 rounded-lg text-xs font-semibold ${act?'bg-blue-600 text-white':'bg-gray-100 text-gray-700 hover:bg-gray-200'} ${dis?'opacity-40 cursor-not-allowed':''}`;if(!dis)b.onclick=()=>{currentPage=p2;renderKehadiranTable()};return b};pg.appendChild(mkBtn('«',1,currentPage===1,false));pg.appendChild(mkBtn('‹',currentPage-1,currentPage===1,false));let s=Math.max(1,currentPage-2),e=Math.min(pages,currentPage+2);for(let i=s;i<=e;i++)pg.appendChild(mkBtn(i,i,false,i===currentPage));pg.appendChild(mkBtn('›',currentPage+1,currentPage===pages,false));pg.appendChild(mkBtn('»',pages,currentPage===pages,false))}
+}
+
+function renderInfografis(){
+ const kelas=document.getElementById('infoFilterKelas').value;const data=kelas?allKehadiranData.filter(d=>d.kelas===kelas):allKehadiranData;const kelasMap={};
+ data.forEach(d=>{if(!d.kelas)return;if(!kelasMap[d.kelas])kelasMap[d.kelas]={masuk:0,tidakMasuk:0};const isAbsent=d.jam==='#N/A'||d.jam==='N/A'||!d.jam;if(isAbsent)kelasMap[d.kelas].tidakMasuk++;else kelasMap[d.kelas].masuk++});
+ const container=document.getElementById('infografisChart');const keys=Object.keys(kelasMap).sort();
+ if(!keys.length){container.innerHTML='<p class="text-gray-400 text-center py-8">Tidak ada data.</p>';return}
+ const maxVal=Math.max(...keys.map(k=>kelasMap[k].masuk+kelasMap[k].tidakMasuk),1);
+ const totalM=keys.reduce((a,k)=>a+kelasMap[k].masuk,0),totalT=keys.reduce((a,k)=>a+kelasMap[k].tidakMasuk,0),totalA=totalM+totalT,pct=totalA?Math.round(totalM/totalA*100):0;
+ let html=`<div class="grid grid-cols-3 gap-3 mb-6"><div class="bg-blue-50 rounded-xl p-4 text-center border border-blue-200"><p class="text-2xl font-extrabold text-blue-700">${totalA}</p><p class="text-xs text-gray-500">Total</p></div><div class="bg-green-50 rounded-xl p-4 text-center border border-green-200"><p class="text-2xl font-extrabold text-green-700">${totalM}</p><p class="text-xs text-gray-500">Hadir (${pct}%)</p></div><div class="bg-red-50 rounded-xl p-4 text-center border border-red-200"><p class="text-2xl font-extrabold text-red-700">${totalT}</p><p class="text-xs text-gray-500">Tidak Hadir (${100-pct}%)</p></div></div>`;
+ html+='<h3 class="text-lg font-bold text-blue-700 mb-4">Infografis Kehadiran per Kelas</h3><div class="space-y-3">';
+ keys.forEach(k=>{const m=kelasMap[k].masuk,t=kelasMap[k].tidakMasuk,total=m+t;html+=`<div class="bg-gray-50 rounded-xl p-3"><div class="flex justify-between mb-1"><span class="text-sm font-bold text-blue-800">${k}</span><span class="text-xs text-gray-500">Total: ${total}</span></div><div class="flex gap-1 items-center mb-1"><span class="text-xs w-20 text-green-700">Masuk (${m})</span><div class="flex-1 bg-gray-200 rounded-full h-5 overflow-hidden"><div class="bg-green-500 h-full rounded-full" style="width:${Math.round(m/maxVal*100)}%"></div></div></div><div class="flex gap-1 items-center"><span class="text-xs w-20 text-red-700">Absen (${t})</span><div class="flex-1 bg-gray-200 rounded-full h-5 overflow-hidden"><div class="bg-red-500 h-full rounded-full" style="width:${Math.round(t/maxVal*100)}%"></div></div></div></div>`});
+ html+='</div>';container.innerHTML=html;
+}
+
+// --- TATA TERTIB & PELANGGAR ---
+let allPelanggarData=[];
+async function fetchPelanggarData(){
+ try{
+  const res=await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vRsvvt00NQlPxgNhfUv1IcK2t0SrjvFL5zVJh3qzgefeXHEUtiDKuX9NUz44oxaZlfFWDqbyjzAvZyD/pub?gid=0&single=true&output=csv&t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(8000)});
+  if(!res.ok)throw new Error("Gagal");
+  const text=await res.text();const lines=text.split(/\r?\n/);allPelanggarData=[];
+  for(let i=1;i<lines.length;i++){
+   const line=lines[i].trim();if(!line)continue;
+   const vals=parseCSVLine(line).map(v=>v.replace(/^"|"$/g,'').trim());
+   if(vals.length>2&&vals[2]){
+    allPelanggarData.push({no:vals[0]||'',kelas:vals[1]||'',nama:vals[2]||'',terlambat:parseInt(vals[3])||0,tidakBawaKartu:parseInt(vals[4])||0,kartuHilang:parseInt(vals[5])||0,minggat:parseInt(vals[6])||0,tidakSesuaiAturan:parseInt(vals[7])||0,tidakLengkap:parseInt(vals[8])||0,aksesoris:parseInt(vals[9])||0,makeup:parseInt(vals[10])||0,merokok:parseInt(vals[11])||0,miras:parseInt(vals[12])||0,coratCoret:parseInt(vals[13])||0,buangSampah:parseInt(vals[14])||0,tawuran:parseInt(vals[15])||0,penyalahgunaanHp:parseInt(vals[16])||0,bullying:parseInt(vals[17])||0,makanKelas:parseInt(vals[18])||0,rambutKuku:parseInt(vals[19])||0,bermesraan:parseInt(vals[20])||0,cemarkanNamaBaik:parseInt(vals[21])||0,melawanAncaman:parseInt(vals[22])||0,melawanFisik:parseInt(vals[23])||0});
+   }
+  }
+ }catch(e){
+  allPelanggarData=[{nama:"Ahmad Hidayat",kelas:"VII-A",terlambat:2,tidakBawaKartu:1,kartuHilang:0,minggat:0,tidakSesuaiAturan:0,tidakLengkap:0,aksesoris:0,makeup:0,merokok:0,miras:0,coratCoret:0,buangSampah:0,tawuran:0,penyalahgunaanHp:0,bullying:0,makanKelas:0,rambutKuku:0,bermesraan:0,cemarkanNamaBaik:0,melawanAncaman:0,melawanFisik:0},{nama:"Budi Santoso",kelas:"VIII-A",terlambat:0,tidakBawaKartu:0,kartuHilang:0,minggat:0,tidakSesuaiAturan:2,tidakLengkap:0,aksesoris:0,makeup:0,merokok:1,miras:0,coratCoret:0,buangSampah:0,tawuran:0,penyalahgunaanHp:0,bullying:0,makanKelas:0,rambutKuku:0,bermesraan:0,cemarkanNamaBaik:0,melawanAncaman:0,melawanFisik:0}];
+ }
+}
+
+function switchTataTertibTab(tab){
+ document.getElementById('tt-tabel-section').classList.toggle('hidden',tab!=='tabel');
+ document.getElementById('tt-cek-section').classList.toggle('hidden',tab!=='cek');
+ document.getElementById('tab-tt-tabel').className=tab==='tabel'?'tab-btn active px-5 py-2.5 rounded-xl text-sm font-semibold bg-blue-600 text-white shadow':'tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-gray-200 text-gray-700';
+ document.getElementById('tab-tt-cek').className=tab==='cek'?'tab-btn active px-5 py-2.5 rounded-xl text-sm font-semibold bg-blue-600 text-white shadow':'tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-gray-200 text-gray-700';
+ lucide.createIcons();
+}
+
+function onPelanggarInput(val){
+ const wrapper=document.getElementById('autocompleteResults');
+ if(!val.trim()){wrapper.classList.add('hidden');return}
+ const query=val.toLowerCase();
+ const matches=allPelanggarData.filter(d=>d.nama.toLowerCase().includes(query)).slice(0,5);
+ if(!matches.length){wrapper.classList.add('hidden');return}
+ wrapper.innerHTML='';
+ matches.forEach(m=>{const div=document.createElement('div');div.className='px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm border-b border-gray-100';div.innerHTML=`<span class="font-bold text-slate-800">${m.nama}</span> <span class="text-xs text-gray-500 font-semibold ml-2">Kelas ${m.kelas}</span>`;div.onclick=()=>{document.getElementById('searchPelanggarName').value=m.nama;wrapper.classList.add('hidden');searchPelanggar()};wrapper.appendChild(div)});
+ wrapper.classList.remove('hidden');
+}
+
+const pelanggarPoinWeights={terlambat:2,tidakBawaKartu:1,kartuHilang:2,minggat:10,tidakSesuaiAturan:2,tidakLengkap:1,aksesoris:2,makeup:10,merokok:25,miras:50,coratCoret:5,buangSampah:5,tawuran:50,penyalahgunaanHp:5,bullying:10,makanKelas:2,rambutKuku:5,bermesraan:50,cemarkanNamaBaik:50,melawanAncaman:75,melawanFisik:100};
+const pelanggarLabelMap={terlambat:"Terlambat",tidakBawaKartu:"Tidak bawa kartu absen",kartuHilang:"Kartu absen hilang",minggat:"Minggat",tidakSesuaiAturan:"Tidak sesuai aturan",tidakLengkap:"Tidak lengkap",aksesoris:"Menggunakan aksesoris",makeup:"Siswi memakai & membawa make up ke sekolah",merokok:"Merokok di lingkungan sekolah",miras:"Minum minuman keras",coratCoret:"Corat-coret fasilitas sekolah",buangSampah:"Membuang sampah sembarangan",tawuran:"Tawuran/terlibat perkelahian",penyalahgunaanHp:"Penyalahgunaan HP",bullying:"Bullying",makanKelas:"Makan/minum di kelas kecuali MBG",rambutKuku:"Kuku panjang, rambut panjang / diwarnai",bermesraan:"Berduaan, bermesraan di sekolah",cemarkanNamaBaik:"Mencemarkan nama baik sekolah",melawanAncaman:"Melawan kepala sekolah/guru dengan ancaman",melawanFisik:"Melawan kepala sekolah/guru dengan pemukulan"};
+
+function searchPelanggar(){
+ const nameInput=document.getElementById('searchPelanggarName').value.trim();
+ const resultDiv=document.getElementById('pelanggarResult');
+ const emptyDiv=document.getElementById('pelanggarEmpty');
+ document.getElementById('autocompleteResults').classList.add('hidden');
+ if(!nameInput){resultDiv.innerHTML='';emptyDiv.classList.remove('hidden');return}
+ const student=allPelanggarData.find(d=>d.nama.toLowerCase()===nameInput.toLowerCase())||allPelanggarData.find(d=>d.nama.toLowerCase().includes(nameInput.toLowerCase()));
+ if(!student){
+  emptyDiv.classList.add('hidden');
+  resultDiv.innerHTML=`<div class="bg-white rounded-2xl p-8 border border-red-200 text-center max-w-md mx-auto shadow-md"><i data-lucide="x-circle" class="mx-auto mb-3 text-red-500" style="width:48px;height:48px"></i><p class="text-slate-800 font-bold mb-1">Siswa Tidak Ditemukan</p><p class="text-xs text-gray-500">Nama "${nameInput}" tidak terdaftar di database pelanggaran.</p></div>`;
+  resultDiv.classList.remove('hidden');lucide.createIcons();return;
+ }
+ emptyDiv.classList.add('hidden');
+ let totalPoin=0;let htmlViolations='';
+ Object.entries(pelanggarPoinWeights).forEach(([key,weight])=>{const count=student[key]||0;if(count>0){const subTotal=count*weight;totalPoin+=subTotal;htmlViolations+=`<tr class="hover:bg-slate-50 border-b border-slate-100"><td class="px-4 py-3 text-slate-700 text-sm font-medium">${pelanggarLabelMap[key]||key}</td><td class="px-4 py-3 text-center text-sm font-bold text-slate-800">${count}x</td><td class="px-4 py-3 text-center text-sm font-semibold text-slate-500">${weight}</td><td class="px-4 py-3 text-center"><span class="bg-red-100 text-red-800 text-xs font-bold px-2 py-0.5 rounded-full">${subTotal}</span></td></tr>`}});
+ let statusAlert='text-emerald-700 bg-emerald-50 border border-emerald-100';let statusDesc='Sangat Baik! Siswa mematuhi tata tertib dengan sangat disiplin.';
+ if(totalPoin>50){statusAlert='text-red-700 bg-red-50 border border-red-100';statusDesc='Perlu Binaan Khusus! Poin pelanggaran tinggi, mohon wali kelas segera berkoordinasi.'}
+ else if(totalPoin>20){statusAlert='text-amber-700 bg-amber-50 border border-amber-100';statusDesc='Peringatan Ringan! Siswa perlu dipantau agar tidak mengulangi pelanggaran.'}
+ resultDiv.innerHTML=`<div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden"><div class="p-6 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 text-white flex flex-col md:flex-row md:items-center justify-between gap-4"><div><p class="text-xs text-blue-200 uppercase tracking-wider">Identitas Siswa</p><h2 class="text-2xl font-extrabold">${student.nama}</h2><p class="text-sm font-semibold mt-1">Kelas: ${student.kelas}</p></div><div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 text-center min-w-[120px]"><p class="text-xs text-blue-200 uppercase tracking-wider">Total Poin</p><p class="text-3xl font-extrabold text-yellow-300 mt-1">${totalPoin}</p></div></div><div class="p-6"><div class="rounded-xl p-4 mb-6 ${statusAlert}"><div class="flex gap-2 items-start"><i data-lucide="info" class="flex-shrink-0 mt-0.5" style="width:18px;height:18px"></i><div><p class="font-bold text-sm">Status Kedisiplinan</p><p class="text-xs mt-1 font-medium">${statusDesc}</p></div></div></div><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider mb-3">Detail Pelanggaran</h3><div class="overflow-x-auto"><table class="w-full text-sm"><thead class="bg-slate-50 border-b border-slate-200"><tr><th class="px-4 py-2 text-left text-xs font-semibold text-gray-600">Pelanggaran</th><th class="px-4 py-2 text-center text-xs font-semibold text-gray-600 w-24">Jumlah</th><th class="px-4 py-2 text-center text-xs font-semibold text-gray-600 w-24">Bobot</th><th class="px-4 py-2 text-center text-xs font-semibold text-gray-600 w-24">Total</th></tr></thead><tbody>${htmlViolations||'<tr><td colspan="4" class="px-4 py-8 text-center text-gray-400 italic">Bersih! Tidak ada riwayat catatan pelanggaran.</td></tr>'}</tbody></table></div></div></div>`;
+ resultDiv.classList.remove('hidden');lucide.createIcons();
+}
+
+function resetPelanggarSearch(){document.getElementById('searchPelanggarName').value='';document.getElementById('pelanggarResult').innerHTML='';document.getElementById('pelanggarEmpty').classList.remove('hidden');document.getElementById('autocompleteResults').classList.add('hidden')}
+
+// --- ANNOUNCEMENTS ---
+async function fetchAnnouncements(){
+ try{
+  const res=await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vT971YjH3As--Nkwk5ePKDlhez0XDmMg8B1idv6Hs5hv_xLPFt7es2_VPNr8bIFN7ACmjNVDrsne4C2/pub?gid=0&single=true&output=csv&t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(5000)});
+  if(!res.ok)throw new Error("Gagal");
+  const text=await res.text();const lines=text.split(/\r?\n/);const announcements=[];
+  for(let i=1;i<lines.length;i++){const vals=parseCSVLine(lines[i]);const colB=vals[1]?.trim();if(colB)announcements.push(colB)}
+  const container=document.getElementById('importantInfo');
+  container.textContent=announcements.length?announcements.map(a=>`• ${a}`).join('   '):'📌 Tidak ada informasi penting saat ini.';
+ }catch(e){document.getElementById('importantInfo').textContent='• Pendaftaran Peserta Didik Baru (PPDB) Tahun Ajaran 2026/2027 telah dibuka.   •   Pembagian Raport Semester Genap dilaksanakan pada tanggal 25 Juli 2026.'}
+}
+
+// --- JADWAL KBM ---
+const teachers={1:"Dewi Pramukawati, M.Pd.",2:"Didi Ahmad Setiadi, S.Pd.",3:"Tien Sulastini, S.Pd.",4:"Endang Sri Hendayani, S.Pd.",5:"Ujang Sudirja, S.Pd.",6:"Saenah, S.Pd.",7:"Syarip Hidayat, S.Pd.",8:"Ayip Zaenal Aripin, S.Ag.M.Pd.",9:"Dedi Sutardi, S.Pd.",10:"Nani Yuningsih, S.Pd.",11:"Eros Rosmiati, S.Pd.",12:"Iman Nurjaman, S.Pd.",13:"Elis Susanti, S.Pd.",14:"Sarhani, S.Pd.",15:"Adit Adistya Maulana, S.Pd.",16:"Sanita Triksi Shepia, S.Pd.",17:"Ina Yatul Huda, S.Pd.",18:"Rudiyanto, S.Pd.",19:"Yusup Febriana, S.Pd.",20:"Nia Komalasari, S.Pd.",21:"Nia Fitria, S.Pd.",22:"Sri Nurhayati, M.Pd.",23:"Regi Fajar Nugraha, S.Pd.",24:"Euis Karmila, M.Sn.",25:"Aang Apandi, S.Pd.",26:"Ahmad Royani, S.Pd.",27:"Evy Setia Oktaviani, S.Kom.",28:"Lia Lustiany, S.Pd.",29:"Ayu Diene Yura, S.Pd.",30:"Gama Permana, SE.Sy.",31:"Andri Priatna, S.Pd."};
+const shortNames={};Object.entries(teachers).forEach(([k,v])=>{const p=v.split(',')[0].split(' ');shortNames[k]=p.length>2?p.slice(0,2).join(' '):p[0]});
+const classes=["VII-A","VII-B","VII-C","VII-D","VII-E","VII-F","VIII-A","VIII-B","VIII-C","VIII-D","VIII-E","VIII-F","IX-A","IX-B","IX-C","IX-D","IX-E","IX-F"];
+
+const days=[
+{name:"Senin",rows:[{type:"activity",text:"06.30-07.30 Upacara Bendera"},{type:"activity",text:"07.30-07.50 Briefing"},{jam:1,waktu:"07.50-08.25",d:[31,8,6,9,16,26,24,12,27,4,29,13,30,5,3,15,11,22]},{jam:2,waktu:"08.25-09.00",d:[31,17,6,9,16,26,24,12,27,4,29,13,8,5,3,15,11,22]},{jam:3,waktu:"09.00-09.35",d:[30,17,10,9,26,16,24,4,13,27,29,12,8,19,5,15,3,22]},{type:"break",text:"Istirahat 30 Menit"},{jam:4,waktu:"10.05-10.40",d:[9,17,10,27,30,16,26,4,13,29,24,12,15,19,5,8,3,11]},{jam:5,waktu:"10.40-11.15",d:[9,16,30,27,6,17,21,4,26,29,24,22,15,3,19,8,5,11]},{jam:6,waktu:"11.15-11.50",d:[9,16,8,27,6,17,21,13,26,29,24,22,15,3,14,11,5,19]},{type:"break",text:"Istirahat 45 Menit"},{jam:7,waktu:"12.35-13.10",d:[16,24,31,17,9,6,10,13,21,12,27,22,5,2,14,11,8,3]},{jam:8,waktu:"13.10-13.45",d:[16,24,31,17,9,6,10,13,21,12,27,22,5,2,14,11,8,3]}]},
+{name:"Selasa",rows:[{jam:1,waktu:"06.30-07.05",d:[24,20,17,31,23,10,18,13,29,26,28,12,14,11,7,22,25,15]},{jam:2,waktu:"07.05-07.40",d:[24,20,31,6,23,10,18,13,29,26,28,12,14,11,7,22,25,15]},{jam:3,waktu:"07.40-08.15",d:[17,24,20,6,23,9,26,10,29,13,12,28,7,19,3,22,25,15]},{jam:4,waktu:"08.15-08.50",d:[23,24,20,17,6,9,26,10,4,13,12,28,7,15,3,19,11,18]},{type:"break",text:"Istirahat 30 Menit"},{jam:5,waktu:"09.20-09.55",d:[23,17,20,29,6,9,12,22,4,13,26,10,2,15,19,7,11,18]},{jam:6,waktu:"09.55-10.30",d:[23,9,28,29,17,25,12,26,4,22,13,10,2,15,19,7,11,20]},{jam:7,waktu:"10.30-11.05",d:[6,9,28,29,12,26,4,15,18,24,13,23,2,7,14,25,22,20]},{jam:8,waktu:"11.05-11.40",d:[6,10,9,28,12,29,4,15,18,24,13,23,3,7,14,25,22,19]},{type:"break",text:"Istirahat 45 Menit"},{jam:9,waktu:"12.25-13.00",d:[20,10,9,28,12,29,13,15,26,24,4,23,3,14,2,25,22,19]},{jam:10,waktu:"13.00-13.35",d:[20,31,6,9,28,29,13,18,12,10,4,26,11,14,2,3,7,22]},{jam:11,waktu:"13.35-14.10",d:[25,31,6,9,28,17,13,18,12,10,4,26,11,14,2,3,7,22]}]},
+{name:"Rabu",rows:[{jam:1,waktu:"06.30-07.05",d:[6,9,23,25,28,16,18,26,21,27,12,29,5,3,8,20,30,11]},{jam:2,waktu:"07.05-07.40",d:[6,9,23,8,28,16,18,26,21,27,12,29,5,3,15,20,7,11]},{jam:3,waktu:"07.40-08.15",d:[16,9,23,8,27,12,21,30,24,18,26,29,3,14,15,20,7,11]},{jam:4,waktu:"08.15-08.50",d:[16,6,25,23,27,12,21,29,24,18,26,30,3,14,15,7,5,8]},{type:"break",text:"Istirahat 30 Menit"},{jam:5,waktu:"09.20-09.55",d:[10,6,16,23,27,12,30,29,24,21,28,26,11,8,25,7,5,18]},{jam:6,waktu:"09.55-10.30",d:[10,20,16,23,26,9,12,29,27,21,28,24,11,7,25,8,15,18]},{jam:7,waktu:"10.30-11.05",d:[8,20,28,16,26,9,12,21,18,23,27,24,11,7,25,5,15,3]},{jam:8,waktu:"11.05-11.40",d:[8,20,28,16,9,27,29,21,18,23,30,24,14,25,7,5,15,3]},{type:"break",text:"Istirahat 45 Menit"},{jam:9,waktu:"12.25-13.00",d:[24,16,20,6,9,27,null,29,18,12,23,21,28,14,25,11,11,3]},{jam:10,waktu:"13.00-13.35",d:[24,16,20,6,9,27,29,18,12,26,21,28,14,25,30,11,3,5]}]},
+{name:"Kamis",rows:[{type:"activity",text:"06.30-07.30 Literasi / Numerasi / Senam / KASIH NYATA"},{jam:1,waktu:"07.30-08.05",d:[20,25,17,10,16,23,15,27,4,18,28,21,2,8,11,7,22,30]},{jam:2,waktu:"08.05-08.40",d:[20,31,17,10,16,23,15,27,4,18,28,21,2,8,11,7,22,25]},{jam:3,waktu:"08.40-09.15",d:[20,24,17,30,27,23,15,4,18,13,10,28,19,2,11,5,8,25]},{type:"break",text:"Istirahat 30 Menit"},{jam:4,waktu:"09.45-10.20",d:[17,24,8,31,27,16,22,4,18,13,10,28,7,2,11,5,20,25]},{jam:5,waktu:"10.20-10.55",d:[17,30,8,31,25,16,27,24,15,21,23,13,7,2,11,22,20,5]},{jam:6,waktu:"10.55-11.30",d:[31,17,28,27,10,16,18,24,15,21,23,13,8,11,7,22,20,5]},{jam:7,waktu:"11.30-12.05",d:[8,17,28,27,10,16,18,24,15,4,23,13,25,11,7,30,19,20]},{type:"break",text:"Istirahat 45 Menit"},{jam:8,waktu:"12.50-13.25",d:[24,8,16,28,17,27,13,18,10,4,21,22,25,11,5,19,7,20]},{jam:9,waktu:"13.25-14.00",d:[24,8,16,28,17,27,13,18,10,4,21,22,25,30,5,19,7,20]}]},
+{name:"Jumat",rows:[{type:"activity",text:"06.30-07.30 Kegiatan Keagamaan"},{jam:1,waktu:"07.30-08.05",d:[9,23,17,16,28,6,27,21,13,30,4,25,7,5,8,20,19,18]},{jam:2,waktu:"08.05-08.40",d:[9,23,17,16,28,6,27,21,13,12,4,25,7,5,8,20,19,18]},{type:"break",text:"Istirahat 20 Menit"},{jam:3,waktu:"09.00-09.35",d:[17,23,9,28,29,16,4,27,13,12,22,25,19,7,2,3,20,8]},{jam:4,waktu:"09.35-10.10",d:[17,6,9,28,29,16,4,12,30,18,13,21,19,7,2,3,20,8]},{jam:5,waktu:"10.10-10.45",d:[17,6,9,8,29,30,4,12,22,18,13,21,null,null,null,null,null,null]}]}
+];
+
+let currentDay=0;
+function populateJadwalFilters(){
+ const ts2=document.getElementById('info-teacher-select');
+ if(ts2){ts2.innerHTML='<option value="">-- Pilih Guru --</option>';Object.entries(teachers).forEach(([id,name])=>{const o=document.createElement('option');o.value=id;o.textContent=name;ts2.appendChild(o)})}
+}
+
+function renderJadwalTable(dayIdx){
+ currentDay=dayIdx;const day=days[dayIdx];const table=document.getElementById('schedule-table');if(!table)return;
+ const totalCols=2+classes.length;
+ let html='<thead><tr><th>Jam</th><th>Waktu</th>';classes.forEach(c=>{html+=`<th>${c}</th>`});html+='</tr></thead><tbody>';
+ day.rows.forEach(r=>{
+  if(r.type==='break'){html+=`<tr class="break-row"><td colspan="${totalCols}">${r.text}</td></tr>`}
+  else if(r.type==='activity'){html+=`<tr class="activity-row"><td colspan="${totalCols}">${r.text}</td></tr>`}
+  else{html+=`<tr><td class="font-semibold">${r.jam}</td><td class="text-xs whitespace-nowrap">${r.waktu}</td>`;r.d.forEach(v=>{if(v===null)html+='<td class="text-xs italic text-gray-500">Pembinaan Karir</td>';else{const full=teachers[v]||v;const short=shortNames[v]||v;html+=`<td data-tooltip="${full}">${short}</td>`}});html+='</tr>'}
+ });
+ html+='</tbody>';table.innerHTML=html;
+}
+
+function showDay(idx){for(let i=0;i<5;i++){const tab=document.getElementById('tab-'+i);if(tab)tab.className=i===idx?'tab-active px-4 py-2 rounded-lg font-medium text-sm transition-all':'tab-inactive px-4 py-2 rounded-lg font-medium text-sm transition-all'}renderJadwalTable(idx)}
+
+function switchMenu(menu){
+ const homeSec=document.getElementById('section-home');const infoSec=document.getElementById('section-infografis');
+ if(homeSec&&infoSec){homeSec.classList.toggle('hidden',menu!=='home');infoSec.classList.toggle('hidden',menu!=='infografis')}
+ const mHome=document.getElementById('menu-home');const mInfo=document.getElementById('menu-infografis');
+ if(mHome&&mInfo){mHome.className=menu==='home'?'menu-active px-5 py-2 rounded-lg font-semibold text-sm transition-all':'menu-inactive px-5 py-2 rounded-lg font-semibold text-sm transition-all';mInfo.className=menu==='infografis'?'menu-active px-5 py-2 rounded-lg font-semibold text-sm transition-all':'menu-inactive px-5 py-2 rounded-lg font-semibold text-sm transition-all'}
+ lucide.createIcons();
+}
+
+const jadwalPenyambutanSiswa={
+ 'Senin':['Didi Ahmad Setiadi, S.Pd.','Tien Sulastini, S.Pd.','Endang Sri Hendayani, S.Pd.','Ujang Sudirja, S.Pd.','Saenah, S.Pd.','Elis Susanti, S.Pd.','Sarhani, S.Pd.','Yusup Febriana, S.Pd.','Sri Nurhayati, M.Pd.','Euis Karmila, M.Sn.','Ahmad Royani, S.Pd.','Evy Setia Oktaviani, S.Kom.','Ayu Diene Yura, S.Pd.','Herianah','Diding Kosdadi','Dede Astri Muryanti'],
+ 'Selasa':['Syarip Hidayat, S.Pd.','Nani Yuningsih, S.Pd.','Eros Rosmiati, S.Pd.','Iman Nurjaman, S.Pd.','Elis Susanti, S.Pd.','Sarhani, S.Pd.','Adit Adistya Maulana, S.Pd.','Ina Yatul Huda, S.Pd.','Rudiyanto, S.Pd.','Euis Karmila, M.Sn.','Lia Lustiany, S.Pd.','Aan, S.Ip.','Winaningsih, A.Md.','Mutia Febriani','Ilah Karnilah','Aris Riyanto'],
+ 'Rabu':['Tien Sulastini, S.Pd.','Ujang Sudirja, S.Pd.','Saenah, S.Pd.','Dedi Sutardi, S.Pd.','Iman Nurjaman, S.Pd.','Sanita Triksi Shepia, S.Pd.','Nia Komalasari, S.Pd.I.','Regi Fajar Nugraha, S.Pd.','Aang Apandi, S.Pd.','Ahmad Royani, S.Pd.','Ayu Diene Yura, S.Pd.','Ucu Sudiawati','Ilah Karnilah','Rhomi Nazilman','Mutia Febriani'],
+ 'Kamis':['Didi Ahmad Setiadi, S.Pd.','Endang Sri Hendayani, S.Pd.','Ayip Zaenal Aripin, S.Ag., M.Pd.','Nani Yuningsih, S.Pd.','Eros Rosmiati, S.Pd.','Adit Adistya Maulana, S.Pd.','Rudiyanto, S.Pd.','Nia Fitria, S.Pd.','Regi Fajar Nugraha, S.Pd.','Evy Setia Oktaviani, S.Kom.','Gama Permana, SE.Sy.','Herianah','Diding Kosdadi','Dede Astri Muryanti','Rhomi Nazilman'],
+ 'Jumat':['Syarip Hidayat, S.Pd.','Ayip Zaenal Aripin, S.Ag., M.Pd.','Dedi Sutardi, S.Pd.','Sanita Triksi Shepia, S.Pd.','Ina Yatul Huda, S.Pd.','Yusup Febriana, S.Pd.','Nia Komalasari, S.Pd.I.','Nia Fitria, S.Pd.','Sri Nurhayati, M.Pd.','Aang Apandi, S.Pd.','Lia Lustiany, S.Pd.','Gama Permana, SE.Sy.','Aan, S.Ip.','Winaningsih, A.Md.','Ucu Sudiawati','Aris Riyanto']
+};
+
+function renderInfoGuru(tid){
+ const container=document.getElementById('info-result');if(!container)return;
+ if(!tid){container.innerHTML='<p class="text-slate-500 text-sm col-span-full">Silakan pilih guru untuk melihat jadwal.</p>';return}
+ if(tid==='1'){
+  let html='<h3 class="text-lg font-bold text-blue-700 mb-4 col-span-full">Jadwal Penyambutan Siswa (PAGIKU CERAHKU)</h3>';
+  Object.entries(jadwalPenyambutanSiswa).forEach(([hari,names])=>{html+=`<div class="info-card"><h4 class="font-bold text-base mb-3" style="color:#1e3a5f">${hari}</h4><ul class="space-y-1.5">`;names.forEach(name=>{html+=`<li class="text-sm text-gray-700">• ${name}</li>`});html+=`</ul><p class="mt-2 text-xs text-slate-500">${names.length} orang</p></div>`});
+  container.innerHTML=html;return;
+ }
+ const id=Number(tid);let html='';
+ days.forEach(day=>{const entries=[];day.rows.forEach(r=>{if(r.d)r.d.forEach((v,i)=>{if(v===id)entries.push({jam:r.jam,waktu:r.waktu,kelas:classes[i]})})});
+  if(entries.length){html+=`<div class="info-card"><h3 class="font-bold text-base mb-2" style="color:#1e3a5f">${day.name}</h3><table class="w-full text-xs"><thead><tr class="border-b"><th class="text-left py-1">Jam</th><th class="text-left py-1">Waktu</th><th class="text-left py-1">Kelas</th></tr></thead><tbody>`;entries.forEach(e=>{html+=`<tr class="border-b border-slate-100"><td class="py-1 font-semibold">${e.jam}</td><td class="py-1">${e.waktu}</td><td class="py-1 font-medium">${e.kelas}</td></tr>`});html+=`</tbody></table><p class="mt-2 text-xs text-slate-500">${entries.length} jam pelajaran</p></div>`}
+ });
+ if(!html)html='<p class="text-slate-500 text-sm col-span-full">Guru ini tidak memiliki jadwal mengajar.</p>';
+ container.innerHTML=html;
+}
+
+// --- REFRESH ---
+async function refreshWebsite(){
+ const button=document.getElementById('refreshButton');
+ const icon=button?.querySelector('[data-lucide="rotate-cw"]');
+ const label=button?.querySelector('span');
+ if(button?.disabled)return;
+ if(button){button.disabled=true;button.setAttribute('aria-busy','true');button.classList.add('opacity-75','cursor-wait');button.title='Memuat ulang data...'}
+ if(icon)icon.classList.add('animate-spin');
+ if(label)label.textContent='Memuat...';
+ allKehadiranData=[];allPelanggarData=[];filteredData=[];
+ try{
+  await Promise.allSettled([fetchKehadiran(),fetchPelanggarData(),fetchAnnouncements(),fetchPrayerTimes()]);
+  populateJadwalFilters();showDay(0);updatePrayerDisplay();
+ }finally{
+  if(button){button.disabled=false;button.removeAttribute('aria-busy');button.classList.remove('opacity-75','cursor-wait');button.title='Refresh'}
+  if(icon)icon.classList.remove('animate-spin');
+  if(label)label.textContent='Refresh';
+ }
+}
+
+// --- CALL CENTER ---
+const contactList=[
+{name:"SAENAH, S.Pd.",role:"Wali Kelas VII-A",phone:"6287829925853",cat:"wali"},{name:"DEDI SUTARDI, S.Pd.",role:"Wali Kelas VII-B",phone:"6285295752075",cat:"wali"},{name:"SANITA TRIKSI SHEPIA, S.Pd.",role:"Wali Kelas VII-C",phone:"6285926260136",cat:"wali"},{name:"INA YATUL HUDA, S.Pd.",role:"Wali Kelas VII-D",phone:"6285722052636",cat:"wali"},{name:"LIA LUSTIANY, S.Pd.",role:"Wali Kelas VII-E",phone:"6285721209634",cat:"wali"},{name:"AHMAD ROYANI, S.Pd.",role:"Wali Kelas VII-F",phone:"6283823909013",cat:"wali"},{name:"ELIS SUSANTI, S.Pd.",role:"Wali Kelas VIII-A",phone:"6285295974880",cat:"wali"},{name:"IMAN NURJAMAN, S.Pd.",role:"Wali Kelas VIII-B",phone:"6285624868171",cat:"wali"},{name:"EVY SETIA OKTAVIANI, S.Kom.",role:"Wali Kelas VIII-C",phone:"628978444732",cat:"wali"},{name:"EUIS KARMILA, M.Sn.",role:"Wali Kelas VIII-D",phone:"6285659300837",cat:"wali"},{name:"REGI FAJAR NUGRAHA, S.Pd.",role:"Wali Kelas VIII-E",phone:"6281265130116",cat:"wali"},{name:"NANI YUNINGSIH, S.Pd.",role:"Wali Kelas VIII-F",phone:"6287723716336",cat:"wali"},{name:"ADIT ADISTYA MAULANA, S.Pd.",role:"Wali Kelas IX-A",phone:"6283823093992",cat:"wali"},{name:"AYIP ZAENAL ARIPIN, M.Pd.",role:"Wali Kelas IX-B",phone:"6282295362972",cat:"wali"},{name:"AANG APANDI, S.Pd.",role:"Wali Kelas IX-C",phone:"6283167431184",cat:"wali"},{name:"YUSUF PEBRIANA, S.Pd.",role:"Wali Kelas IX-D",phone:"6287724236867",cat:"wali"},{name:"NIA KOMALASARI, S.Pd.I",role:"Wali Kelas IX-E",phone:"6285226892836",cat:"wali"},{name:"RUDIYANTO, S.Pd.",role:"Wali Kelas IX-F",phone:"6281546712789",cat:"wali"},{name:"AAN, S.Ip.",role:"Admin Tata Usaha",phone:"6287723866368",cat:"staff"},{name:"WINANINGSIH",role:"Admin Tata Usaha",phone:"6287724478300",cat:"staff"},{name:"ARIS RIYANTO",role:"Operator Sekolah",phone:"6281572670351",cat:"staff"},{name:"DIDI AHMAD SETIADI, S.Pd.",role:"Wakasek Kesiswaan",phone:"6282262093354",cat:"staff"}
+];
+let contactSearchQuery="",selectedContactCategory="all";
+
+function renderContacts(){
+ const container=document.getElementById('contactsGrid');const template=document.getElementById('contact-card-template');if(!container||!template)return;container.innerHTML='';
+ const filtered=contactList.filter(c=>{const matchesSearch=c.name.toLowerCase().includes(contactSearchQuery.toLowerCase())||c.role.toLowerCase().includes(contactSearchQuery.toLowerCase());const matchesCat=selectedContactCategory==='all'||c.cat===selectedContactCategory;return matchesSearch&&matchesCat});
+ if(!filtered.length){container.innerHTML='<div class="col-span-full text-center py-10 text-gray-500 text-sm">Tidak menemukan kontak yang cocok.</div>';return}
+ filtered.forEach(c=>{const clone=template.content.cloneNode(true);const badge=clone.querySelector('.avatar-badge');const initials=c.name.split(',')[0].trim().split(' ').map(n=>n[0]).slice(0,2).join('');badge.textContent=initials;badge.className+=(c.cat==='wali'?' bg-amber-100 text-amber-800':' bg-blue-100 text-blue-800');clone.querySelector('.contact-name').textContent=c.name;clone.querySelector('.contact-role').textContent=c.role;
+  const actionWrapper=clone.querySelector('.contact-action-wrapper');
+  if(c.phone){const waUrl=`https://wa.me/${c.phone}?text=Halo%20${encodeURIComponent(c.name)}%2C%20saya%20ingin%20bertanya...`;actionWrapper.innerHTML=`<a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded-xl transition shadow text-xs"><i data-lucide="message-circle" style="width:16px;height:16px"></i> Hubungi WhatsApp</a>`}
+  else{actionWrapper.innerHTML='<span class="text-xs text-gray-400 italic">No. WhatsApp Belum Tersedia</span>'}
+  container.appendChild(clone);
+ });lucide.createIcons();
+}
+function filterContacts(){contactSearchQuery=document.getElementById('searchContact').value;renderContacts()}
+function filterContactCategory(cat){selectedContactCategory=cat;['all','wali','staff'].forEach(k=>{const btn=document.getElementById('cat-'+k);if(btn)btn.className=k===cat?"px-4 py-2 rounded-xl text-xs font-semibold bg-blue-900 text-white transition shadow":"px-4 py-2 rounded-xl text-xs font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition"});renderContacts()}
+
+// --- PRAYER TIMES ---
+const fallbackPrayerTimes={Fajr:'04:36',Dhuhr:'11:52',Asr:'15:12',Maghrib:'17:49',Isha:'18:59'};
+const arinaPrayerTimesByDate={
+ '2026-08-01':{Fajr:'04:39',Dhuhr:'11:54',Asr:'15:16',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-02':{Fajr:'04:39',Dhuhr:'11:54',Asr:'15:16',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-03':{Fajr:'04:39',Dhuhr:'11:54',Asr:'15:15',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-04':{Fajr:'04:39',Dhuhr:'11:54',Asr:'15:15',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-05':{Fajr:'04:39',Dhuhr:'11:54',Asr:'15:15',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-06':{Fajr:'04:39',Dhuhr:'11:54',Asr:'15:15',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-07':{Fajr:'04:38',Dhuhr:'11:54',Asr:'15:15',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-08':{Fajr:'04:38',Dhuhr:'11:54',Asr:'15:15',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-09':{Fajr:'04:38',Dhuhr:'11:54',Asr:'15:15',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-10':{Fajr:'04:38',Dhuhr:'11:53',Asr:'15:14',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-11':{Fajr:'04:38',Dhuhr:'11:53',Asr:'15:14',Maghrib:'17:49',Isha:'19:01'},
+ '2026-08-12':{Fajr:'04:38',Dhuhr:'11:53',Asr:'15:14',Maghrib:'17:49',Isha:'19:00'},
+ '2026-08-13':{Fajr:'04:37',Dhuhr:'11:53',Asr:'15:14',Maghrib:'17:49',Isha:'19:00'},
+ '2026-08-14':{Fajr:'04:37',Dhuhr:'11:53',Asr:'15:13',Maghrib:'17:49',Isha:'19:00'},
+ '2026-08-15':{Fajr:'04:37',Dhuhr:'11:53',Asr:'15:13',Maghrib:'17:49',Isha:'19:00'},
+ '2026-08-16':{Fajr:'04:37',Dhuhr:'11:52',Asr:'15:13',Maghrib:'17:49',Isha:'19:00'},
+ '2026-08-17':{Fajr:'04:36',Dhuhr:'11:52',Asr:'15:13',Maghrib:'17:49',Isha:'19:00'},
+ '2026-08-18':{Fajr:'04:36',Dhuhr:'11:52',Asr:'15:12',Maghrib:'17:49',Isha:'19:00'},
+ '2026-08-19':{Fajr:'04:36',Dhuhr:'11:52',Asr:'15:12',Maghrib:'17:49',Isha:'18:59'},
+ '2026-08-20':{Fajr:'04:36',Dhuhr:'11:51',Asr:'15:12',Maghrib:'17:49',Isha:'18:59'},
+ '2026-08-21':{Fajr:'04:35',Dhuhr:'11:51',Asr:'15:11',Maghrib:'17:49',Isha:'18:59'},
+ '2026-08-22':{Fajr:'04:35',Dhuhr:'11:51',Asr:'15:11',Maghrib:'17:49',Isha:'18:59'},
+ '2026-08-23':{Fajr:'04:35',Dhuhr:'11:51',Asr:'15:10',Maghrib:'17:48',Isha:'18:59'},
+ '2026-08-24':{Fajr:'04:34',Dhuhr:'11:50',Asr:'15:10',Maghrib:'17:48',Isha:'18:59'},
+ '2026-08-25':{Fajr:'04:34',Dhuhr:'11:50',Asr:'15:10',Maghrib:'17:48',Isha:'18:58'},
+ '2026-08-26':{Fajr:'04:33',Dhuhr:'11:50',Asr:'15:09',Maghrib:'17:48',Isha:'18:58'},
+ '2026-08-27':{Fajr:'04:33',Dhuhr:'11:50',Asr:'15:09',Maghrib:'17:48',Isha:'18:58'},
+ '2026-08-28':{Fajr:'04:33',Dhuhr:'11:49',Asr:'15:08',Maghrib:'17:48',Isha:'18:58'},
+ '2026-08-29':{Fajr:'04:32',Dhuhr:'11:49',Asr:'15:08',Maghrib:'17:48',Isha:'18:58'},
+ '2026-08-30':{Fajr:'04:32',Dhuhr:'11:49',Asr:'15:07',Maghrib:'17:48',Isha:'18:58'},
+ '2026-08-31':{Fajr:'04:32',Dhuhr:'11:48',Asr:'15:07',Maghrib:'17:48',Isha:'18:57'}
+};
+let lastPrayerTimes={...fallbackPrayerTimes};
+let lastPrayerDateKey='';
+const notifiedPrayerKeys=new Set();
+let prayerNotificationsEnabled=false;
+
+function getJakartaDateKey(date=new Date()){
+ return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
+}
+
+function normalizePrayerTime(rawValue){
+ if(!rawValue)return '';
+ const cleaned=String(rawValue).trim();
+ if(!cleaned)return '';
+ const match=cleaned.match(/^(\d{1,2}):(\d{2})$/);
+ if(match)return `${String(match[1]).padStart(2,'0')}:${match[2]}`;
+ const decimalMatch=cleaned.match(/^(\d{1,2})\.(\d{2})$/);
+ if(decimalMatch)return `${String(decimalMatch[1]).padStart(2,'0')}:${decimalMatch[2]}`;
+ return cleaned;
+}
+
+function applyPrayerTimes(prayerTimes){
+ const normalized={
+  Fajr: normalizePrayerTime(prayerTimes?.Fajr ?? prayerTimes?.Subuh ?? prayerTimes?.subuh ?? prayerTimes?.fajr),
+  Dhuhr: normalizePrayerTime(prayerTimes?.Dhuhr ?? prayerTimes?.Zuhur ?? prayerTimes?.zuhur ?? prayerTimes?.dhuhr),
+  Asr: normalizePrayerTime(prayerTimes?.Asr ?? prayerTimes?.Ashar ?? prayerTimes?.ashar ?? prayerTimes?.asr),
+  Maghrib: normalizePrayerTime(prayerTimes?.Maghrib ?? prayerTimes?.Magrib ?? prayerTimes?.magrib),
+  Isha: normalizePrayerTime(prayerTimes?.Isha ?? prayerTimes?.Isya ?? prayerTimes?.isya ?? prayerTimes?.isha)
+ };
+ const values=Object.values(normalized).filter(Boolean);
+ if(values.length<5){return false}
+ document.getElementById('prayer-subuh').textContent=normalized.Fajr;
+ document.getElementById('prayer-dzuhur').textContent=normalized.Dhuhr;
+ document.getElementById('prayer-ashar').textContent=normalized.Asr;
+ document.getElementById('prayer-maghrib').textContent=normalized.Maghrib;
+ document.getElementById('prayer-isya').textContent=normalized.Isha;
+ lastPrayerTimes={...normalized};
+ lastPrayerDateKey=getJakartaDateKey(new Date());
+ updateNextPrayerHighlight(normalized);
+ return true;
+}
+
+function setPrayerCardsInactive(){
+ const prayerCards=['subuh','dzuhur','ashar','maghrib','isya'];
+ prayerCards.forEach(key=>{
+  const card=document.getElementById(`prayer-card-${key}`);
+  if(!card)return;
+  card.className='bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 text-center hover:bg-white/15 transition';
+  const text=card.querySelector('p:last-of-type');
+  if(text)text.classList.remove('text-yellow-100','text-yellow-200','text-white');
+  if(text)text.classList.add('text-yellow-300');
+ });
+}
+
+function updateNextPrayerHighlight(prayerTimes=lastPrayerTimes){
+ const now=new Date();
+ const currentMinutes=now.getHours()*60 + now.getMinutes();
+ const prayerOrder=[
+  {key:'Fajr', time:prayerTimes?.Fajr},
+  {key:'Dhuhr', time:prayerTimes?.Dhuhr},
+  {key:'Asr', time:prayerTimes?.Asr},
+  {key:'Maghrib', time:prayerTimes?.Maghrib},
+  {key:'Isha', time:prayerTimes?.Isha}
+ ];
+ let nextKey='Fajr';
+ let nextDifference=Infinity;
+ prayerOrder.forEach(({key,time})=>{
+  const minutes=Number(String(time).split(':')[0]) * 60 + Number(String(time).split(':')[1]);
+  if(!Number.isFinite(minutes))return;
+  let diff = minutes - currentMinutes;
+  if(diff < 0)diff += 24 * 60;
+  if(diff < nextDifference){
+   nextDifference=diff;
+   nextKey=key;
+  }
+ });
+ setPrayerCardsInactive();
+ const activeCard=document.getElementById(`prayer-card-${nextKey.toLowerCase() === 'fajr' ? 'subuh' : nextKey.toLowerCase() === 'dhuhr' ? 'dzuhur' : nextKey.toLowerCase() === 'asr' ? 'ashar' : nextKey.toLowerCase() === 'maghrib' ? 'maghrib' : 'isya'}`);
+ if(activeCard){
+  activeCard.className='bg-yellow-200/15 backdrop-blur-sm border border-yellow-200 rounded-xl p-3 text-center hover:bg-yellow-200/20 transition shadow-lg shadow-yellow-500/10 ring-2 ring-yellow-300';
+  const valueEl=activeCard.querySelector('p:last-of-type');
+  if(valueEl){valueEl.classList.remove('text-yellow-300');valueEl.classList.add('text-white');}
+ }
+}
+
+async function fetchArinaPrayerTimes(dateKey){
+ const response=await fetch('https://jadwalsholat.arina.id/kab-kuningan',{cache:'no-store',mode:'cors',signal:AbortSignal.timeout(8000)});
+ if(!response.ok)throw new Error('Sumber Arina tidak dapat diakses');
+ const html=await response.text();
+ const documentParser=new DOMParser();
+ const page=documentParser.parseFromString(html,'text/html');
+ const targetDate=`${dateKey.slice(8,10)}-${dateKey.slice(5,7)}-${dateKey.slice(0,4)}`;
+ const row=[...page.querySelectorAll('tr')].find(tableRow=>{
+  const cells=[...tableRow.querySelectorAll('th,td')].map(cell=>cell.textContent.trim());
+  return cells[0]===targetDate&&cells.length>=7;
+ });
+ if(!row)throw new Error('Tanggal tidak ditemukan di sumber Arina');
+ const cells=[...row.querySelectorAll('th,td')].map(cell=>cell.textContent.trim());
+ return {Fajr:cells[2],Dhuhr:cells[3],Asr:cells[4],Maghrib:cells[5],Isha:cells[6]};
+}
+
+async function fetchPrayerTimes(){
+ const todayKey=getJakartaDateKey(new Date());
+ if(lastPrayerDateKey===todayKey && Object.values(lastPrayerTimes).every(value=>value && value!=='--:--')){
+  updateNextPrayerHighlight(lastPrayerTimes);
+  return;
+ }
+
+ try{
+  const dateKey=todayKey;
+  try{
+   const arinaPrayerTimes=await fetchArinaPrayerTimes(dateKey);
+   if(applyPrayerTimes(arinaPrayerTimes))return;
+  }catch(error){}
+  const cachedArinaPrayerTimes=arinaPrayerTimesByDate[dateKey];
+  if(cachedArinaPrayerTimes&&applyPrayerTimes(cachedArinaPrayerTimes))return;
+ }catch(error){}
+
+ const fallbackKeys=Object.keys(fallbackPrayerTimes);
+ const fallbackTimeEntries={};
+ fallbackKeys.forEach(key=>{fallbackTimeEntries[key]=fallbackPrayerTimes[key];});
+ applyPrayerTimes(fallbackTimeEntries);
+}
+
+function updatePrayerDisplay(){
+ const now=new Date();
+ const formatter=new Intl.DateTimeFormat('id-ID',{timeZone:'Asia/Jakarta',weekday:'long',year:'numeric',month:'long',day:'numeric'});
+ const timeFormatter=new Intl.DateTimeFormat('id-ID',{timeZone:'Asia/Jakarta',hour:'2-digit',minute:'2-digit',hour12:false});
+ document.getElementById('todayDate').textContent=formatter.format(now);
+ document.getElementById('currentTime').textContent=timeFormatter.format(now);
+ updateNextPrayerHighlight(lastPrayerTimes);
+ checkPrayerNotifications(now);
+}
+
+function getJakartaClock(date){
+ const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}).formatToParts(date).reduce((values,part)=>{values[part.type]=part.value;return values},{});
+ return {dateKey:`${parts.year}-${parts.month}-${parts.day}`,minutes:Number(parts.hour)*60+Number(parts.minute)};
+}
+
+function checkPrayerNotifications(date=new Date()){
+ if(!prayerNotificationsEnabled||!('Notification' in window)||Notification.permission!=='granted')return;
+ const jakartaClock=getJakartaClock(date);
+ const prayerLabels={Fajr:'Subuh',Dhuhr:'Dzuhur',Asr:'Ashar',Maghrib:'Maghrib',Isha:'Isya'};
+ Object.entries(lastPrayerTimes).forEach(([key,time])=>{
+  const timeParts=String(time).split(':').map(Number);
+  if(timeParts.length!==2||timeParts.some(part=>!Number.isFinite(part)))return;
+  const minutesUntil=(timeParts[0]*60+timeParts[1])-jakartaClock.minutes;
+  const notificationKey=`${jakartaClock.dateKey}-${key}`;
+  if(minutesUntil<=5&&minutesUntil>3&&!notifiedPrayerKeys.has(notificationKey)){
+   new Notification(`Waktu ${prayerLabels[key]} sebentar lagi`,{body:`${prayerLabels[key]} masuk dalam 5 menit pada pukul ${time}.`,tag:notificationKey});
+   notifiedPrayerKeys.add(notificationKey);
+  }
+ });
+}
+
+async function enablePrayerNotifications(){
+ const button=document.getElementById('prayerNotificationButton');
+ if(!('Notification' in window)){if(button)button.querySelector('span').textContent='Browser tidak mendukung notifikasi';return}
+ const permission=await Notification.requestPermission();
+ if(button){
+  button.querySelector('span').textContent=permission==='granted'?'Notifikasi Aktif':'Notifikasi Ditolak';
+  button.disabled=permission!=='granted';
+  button.classList.toggle('opacity-60',permission!=='granted');
+ }
+ if(permission==='granted'){
+  prayerNotificationsEnabled=true;
+  checkPrayerNotifications();
+ }
+}
+
+// --- LAZY LOADING ---
+const lazyLoadedSections=new Set();
+function ensureSectionLoaded(sectionId){
+ if(lazyLoadedSections.has(sectionId))return;lazyLoadedSections.add(sectionId);
+ if(sectionId==='kehadiran')setTimeout(()=>{fetchKehadiran()},0);
+ else if(sectionId==='tatatertib')setTimeout(()=>{fetchPelanggarData()},0);
+ else if(sectionId==='jadwal')setTimeout(()=>{populateJadwalFilters();showDay(0)},0);
+}
+
+// --- INIT ---
+function initializeApp(){
+ lucide.createIcons();fetchAnnouncements();updatePrayerDisplay();fetchPrayerTimes();
+ setTimeout(()=>{showDay(0)},100);updateGuruStaffCount();renderContacts();
+ applyPortalZoom('attendance');applyPortalZoom('kas');applyPortalZoom('agenda');
+ setInterval(()=>{
+  const now=new Date();
+  if(getJakartaDateKey(now)!==lastPrayerDateKey){fetchPrayerTimes();}
+  updatePrayerDisplay();
+ },60000);
+}
+const refreshButton=document.getElementById('refreshButton');if(refreshButton){refreshButton.addEventListener('click',function(){refreshWebsite()})}
+window.showSection=showSection;window.refreshWebsite=refreshWebsite;window.initializeApp=initializeApp;window.fetchKehadiran=fetchKehadiran;window.fetchPelanggarData=fetchPelanggarData;window.populateJadwalFilters=populateJadwalFilters;window.renderContacts=renderContacts;window.enablePrayerNotifications=enablePrayerNotifications;
+if(document.readyState!=='loading')initializeApp();
+else document.addEventListener('DOMContentLoaded',initializeApp);
+if(window.requestIdleCallback){requestIdleCallback(()=>{fetchKehadiran();fetchPelanggarData();populateJadwalFilters()})}else{setTimeout(()=>{fetchKehadiran();fetchPelanggarData();populateJadwalFilters()},2000)}
+  </script>
+ </body>
+</html>
