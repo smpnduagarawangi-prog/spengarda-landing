@@ -106,7 +106,8 @@ body {
     transform: none;
     position: absolute;
     left: 50%;
-    bottom: 16vh;
+    top: 6vh;
+    bottom: auto;
     transform: translateX(-50%);
     width: min(100%, 920px);
 }
@@ -165,14 +166,14 @@ body {
 .orbit-container {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    bottom: max(24px, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
     width: min(100%, 980px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 14px 18px;
+    gap: 10px 18px;
     pointer-events: auto;
     z-index: 4;
     padding: 0 18px;
@@ -407,6 +408,24 @@ body {
 }
 
 @media (max-width: 700px) {
+    .orbit-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px 10px;
+        padding: 0 12px;
+    }
+
+    .app-icon-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 78px;
+        padding: 10px 8px;
+    }
+
+    .app-icon-card span {
+        font-size: 0.72rem;
+    }
+
     .app-modal {
         align-items: flex-start;
         padding: 3vh 0;
